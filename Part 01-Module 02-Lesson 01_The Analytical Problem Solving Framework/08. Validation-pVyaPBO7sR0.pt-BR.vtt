@@ -1,0 +1,104 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:03.667
+Para validar a análise, existem
+muitos valores estatísticos
+
+00:00:03.700 --> 00:00:06.900
+que podemos usar para determinar
+a qualidade das soluções.
+
+00:00:06.933 --> 00:00:09.567
+No entanto, é importante
+analisar todos os resultados
+
+00:00:09.600 --> 00:00:12.500
+dentro do contexto
+do problema de negócio.
+
+00:00:12.533 --> 00:00:14.567
+Vamos voltar
+ao nosso exemplo.
+
+00:00:14.600 --> 00:00:16.966
+Imagine que tenhamos começado
+a tentar prever a temperatura
+
+00:00:16.999 --> 00:00:19.733
+apenas com base
+no histórico de temperaturas.
+
+00:00:19.767 --> 00:00:21.933
+Depois de gerar
+um modelo preditivo,
+
+00:00:21.967 --> 00:00:24.231
+descobrimos,
+através da validação,
+
+00:00:24.264 --> 00:00:27.900
+que usar o histórico de temperaturas
+não é o melhor modo de prever
+
+00:00:27.933 --> 00:00:30.033
+temperaturas futuras.
+
+00:00:30.067 --> 00:00:33.233
+Logo, temos que voltar
+ao modelo de análise
+
+00:00:33.267 --> 00:00:36.033
+e mudar o modelo.
+Por exemplo,
+
+00:00:36.067 --> 00:00:38.800
+podemos acrescentar
+um novo fator ao modelo,
+
+00:00:38.833 --> 00:00:40.767
+como a temperatura prevista,
+
+00:00:40.800 --> 00:00:44.233
+ou usar uma abordagem
+totalmente diferente.
+
+00:00:44.267 --> 00:00:47.067
+Muitas vezes, passamos
+por um processo iterativo
+
+00:00:47.100 --> 00:00:50.933
+ao construir um modelo preditivo
+que seja confiável.
+
+00:00:50.967 --> 00:00:54.000
+É essencial que você não jogue
+todos os seus dados em um modelo
+
+00:00:54.033 --> 00:00:56.267
+e fique torcendo
+para obter um resultado decente.
+
+00:00:56.300 --> 00:01:00.700
+Os melhores modelos são os criados
+com análises metódicas.
+
+00:01:00.733 --> 00:01:05.300
+Em alguns casos, você pode ter
+que começar todo o processo de novo
+
+00:01:05.333 --> 00:01:07.767
+e revisar algumas
+das suas suposições e decisões
+
+00:01:07.800 --> 00:01:10.667
+com base no que aprendeu
+durante o processo.
+
+00:01:10.700 --> 00:01:12.033
+*END*
+
+00:01:12.067 --> 00:01:13.367
+*CODE*
+

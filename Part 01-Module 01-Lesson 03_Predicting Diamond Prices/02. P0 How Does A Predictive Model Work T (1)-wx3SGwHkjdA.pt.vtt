@@ -1,0 +1,119 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:02.740
+Para construir um modelo preditivo,
+você primeiro começa
+
+00:00:02.740 --> 00:00:05.660
+com um grupo de dados onde já 
+se sabe qual o resultado final
+
+00:00:05.660 --> 00:00:07.920
+Estes dados são chamados de "dados de treinamento"
+
+00:00:07.920 --> 00:00:10.640
+Ele terá várias variáveis, chamadas de ​​preditoras
+
+00:00:10.780 --> 00:00:13.700
+assim como o resultado ou variável alvo.
+
+00:00:14.180 --> 00:00:17.820
+Por exemplo, se você quiser predizer 
+a probabilidade de que um aluno se formará
+
+00:00:17.920 --> 00:00:20.060
+com base em algumas informações
+que você tem sobre ele
+
+00:00:20.220 --> 00:00:23.240
+você treina o seu modelo 
+em alunos para quem você já conhece
+
+00:00:23.240 --> 00:00:26.640
+independentemente de terem
+ou não se graduado.
+
+00:00:27.720 --> 00:00:30.480
+Os dados de treinamento ajudam o modelo a compreender a relação
+
+00:00:30.500 --> 00:00:33.640
+entre as variáveis ​​preditoras e o 
+resultado ou a variável de destino
+
+00:00:34.140 --> 00:00:37.020
+O modelo é então aplicado 
+a um novo conjunto de dados
+
+00:00:37.360 --> 00:00:39.020
+onde os resultados ainda 
+não são conhecidos.
+
+00:00:39.420 --> 00:00:41.920
+Nós chamamos este conjunto de dados de "dados de teste"
+
+00:00:42.480 --> 00:00:43.860
+No exemplo dos alunos
+
+00:00:43.860 --> 00:00:46.080
+Os dados de teste seriam 
+novos ou estudantes existentes
+
+00:00:46.900 --> 00:00:49.480
+para quem temos os dados 
+das variáveis ​​preditoras
+
+00:00:49.680 --> 00:00:52.160
+mas o resultado da graduação 
+ainda não sabemos.
+
+00:00:53.080 --> 00:00:56.620
+Você aplica o modelo a esses dados
+para definir uma estimativa da probabilidade
+
+00:00:56.720 --> 00:00:58.320
+de que cada aluno se formará.
+
+00:00:58.400 --> 00:01:00.200
+Quanto mais dados de treinamento tiver
+
+00:01:00.300 --> 00:01:02.600
+mais o modelo pode prever
+os resultados de maneira correta.
+
+00:01:03.160 --> 00:01:05.700
+Neste primeiro projeto 
+você vai usar um modelo preditivo
+
+00:01:05.700 --> 00:01:08.260
+projetado para prever o preço
+dos diamantes com base
+
+00:01:08.320 --> 00:01:09.880
+nos seus diversos atributos.
+
+00:01:10.160 --> 00:01:12.280
+O modelo já foi treinado 
+usando um grande
+
+00:01:12.280 --> 00:01:15.380
+conjunto de diamantes onde os 
+preços já era conhecido
+
+00:01:15.720 --> 00:01:17.500
+Você usará os resultados do modelo
+
+00:01:17.610 --> 00:01:20.160
+para prever preços para 
+outro conjunto de diamantes
+
+00:01:20.260 --> 00:01:22.640
+para os quais você terá os atributos
+
+00:01:22.640 --> 00:01:24.340
+mas o preço não é conhecido
+
+00:01:24.620 --> 00:01:26.940
+boa sorte
+

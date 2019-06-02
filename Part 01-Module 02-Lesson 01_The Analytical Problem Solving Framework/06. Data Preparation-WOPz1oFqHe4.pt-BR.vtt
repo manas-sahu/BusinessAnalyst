@@ -1,0 +1,138 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.433 --> 00:00:04.867
+A compreensão dos dados combinada
+à compreensão do problema de negócio
+
+00:00:04.900 --> 00:00:08.133
+vai ajudar você a preparar
+os dados para a análise,
+
+00:00:08.167 --> 00:00:11.733
+o terceiro passo do framework
+de resolução de problemas.
+
+00:00:11.767 --> 00:00:14.600
+Ao começar uma análise,
+é muito raro
+
+00:00:14.633 --> 00:00:18.133
+os dados estarem prontos
+sem nenhuma preparação.
+
+00:00:18.833 --> 00:00:22.533
+Preparar os dados normalmente inclui
+uma ou mais das seguintes ações:
+
+00:00:22.567 --> 00:00:27.533
+reunir, limpar, formatar,
+mesclar e selecionar amostras.
+
+00:00:28.700 --> 00:00:31.367
+Quando estiver coletando dados,
+talvez você precise usar
+
+00:00:31.400 --> 00:00:34.633
+várias fontes
+dentro da sua organização.
+
+00:00:34.667 --> 00:00:36.200
+O conjunto de dados
+com que está trabalhando
+
+00:00:36.233 --> 00:00:39.667
+talvez tenha problemas que você
+queira resolver antes da análise.
+
+00:00:39.700 --> 00:00:42.833
+Esses problemas podem ser
+dados incorretos ou faltantes.
+
+00:00:43.600 --> 00:00:47.167
+Você pode ter que formatar os dados:
+mudar o modo como as datas aparecem,
+
+00:00:47.200 --> 00:00:49.667
+renomear campos
+ou até reposicionar células,
+
+00:00:49.700 --> 00:00:52.333
+como se estivesse usando
+uma tabela dinâmica.
+
+00:00:52.367 --> 00:00:54.600
+Você pode querer mesclar
+ou combinar seus dados
+
+00:00:54.633 --> 00:00:57.867
+com outros conjuntos de dados para
+enriquecê-los com outras variáveis,
+
+00:00:57.900 --> 00:01:01.500
+como se usasse
+a função PROCV no Excel.
+
+00:01:01.533 --> 00:01:04.567
+Por fim, talvez você queira
+selecionar amostras dos dados
+
+00:01:04.600 --> 00:01:08.267
+e trabalhar com um número
+mais viável de registros.
+
+00:01:08.467 --> 00:01:10.633
+Voltando ao exemplo
+da companhia elétrica,
+
+00:01:10.667 --> 00:01:14.833
+já percebemos que talvez tenhamos
+que obter dados meteorológicos,
+
+00:01:14.867 --> 00:01:17.300
+para saber as previsões
+das temperaturas máxima e mínima,
+
+00:01:17.333 --> 00:01:20.033
+e os dados antigos
+sobre temperaturas.
+
+00:01:20.200 --> 00:01:23.200
+Os dados que obtivermos
+podem não estar num formato prático,
+
+00:01:23.233 --> 00:01:25.400
+então talvez seja preciso
+prepará-los para análise
+
+00:01:25.433 --> 00:01:28.800
+através da formatação, da limpeza
+e do enriquecimento dos dados.
+
+00:01:28.833 --> 00:01:31.400
+Também vamos coletar dados
+de sistemas internos,
+
+00:01:31.433 --> 00:01:33.400
+como o consumo prévio
+de energia
+
+00:01:33.433 --> 00:01:38.767
+e outros dados que possam ser
+úteis para a nossa análise.
+
+00:01:38.800 --> 00:01:42.900
+Maureen Wolfson criou um curso sobre
+preparação de dados para análise
+
+00:01:42.933 --> 00:01:46.267
+e vai detalhar mais o processo
+de preparação de dados.
+
+00:01:46.300 --> 00:01:47.633
+*END*
+
+00:01:47.667 --> 00:01:48.933
+*CODE*
+

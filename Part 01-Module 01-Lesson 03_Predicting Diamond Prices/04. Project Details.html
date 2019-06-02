@@ -1,0 +1,271 @@
+<!-- udacimak v1.4.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project Details</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Predicting Diamond Prices</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Introducing your first project.html">01. Introducing your first project</a>
+    </li>
+    <li class="">
+      <a href="02. Introduction to Predictive Models.html">02. Introduction to Predictive Models</a>
+    </li>
+    <li class="">
+      <a href="03. Example Project.html">03. Example Project</a>
+    </li>
+    <li class="">
+      <a href="04. Project Details.html">04. Project Details</a>
+    </li>
+    <li class="">
+      <a href="05. Supporting Materials.html">05. Supporting Materials</a>
+    </li>
+    <li class="">
+      <a href="Project Description - Predicting Diamond Prices.html">Project Description - Predicting Diamond Prices</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - Predicting Diamond Prices.html">Project Rubric - Predicting Diamond Prices</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">04. Project Details</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>Diamond Project 0</p></h3>
+  <div>
+  <h1 id="predicting-diamond-prices">Predicting Diamond Prices</h1>
+<p>This project is designed for three main reasons:</p>
+<ul>
+<li>To give you a feel for what you’ll be doing throughout the Nanodegree Program</li>
+<li>To introduce you to Udacity’s project submission and review process</li>
+<li>To make sure you feel comfortable with the basics before you begin. If it feels too easy, don't worry. We have some great stuff in store for you.</li>
+</ul>
+<h3 id="project-overview">Project Overview</h3>
+<p>A jewelry company wants to put in a bid to purchase a large set of diamonds, but is unsure how much it should bid. In this project, you will use the results from a predictive model to make a recommendation on how much the jewelry company should bid for the diamonds. </p>
+<h3 id="us-number-system">US Number System</h3>
+<p>All numbers that will be presented in this Nanodegree program will be based on the US numbering system where 5,269 is "five thousand two hundred sixty nine" and 158.1 is "one hundred fifty eight point one" where 1 is a decimal number. This is <strong>very</strong> important so please take note of this.</p>
+<h3 id="project-details">Project Details</h3>
+<p>A diamond distributor has recently decided to exit the market and has put up a set of 3,000 diamonds up for auction. Seeing this as a great opportunity to expand its inventory, a jewelry company has shown interest in making a bid. To decide how much to bid, the company’s analytics team used a large database of diamond prices to build a linear regression model to predict the price of a diamond based on its attributes. You, as the business analysts, are tasked to apply that model to make a recommendation for how much the company should bid for the entire set of 3,000 diamonds.</p>
+<p>The following diagram represents the analysis at a high level. Since the model is already built, your analysis will focus on the right side of the diagram.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/predictive-diagram.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>The linear regression model provides an equation that you can use to predict diamond prices for the set of 3,000 diamonds.  The equation is below:</p>
+<p><center><strong>Price</strong> = -5,269 + 8,413 x <strong>Carat</strong> + 158.1 x <strong>Cut</strong> + 454 x <strong>Clarity</strong></center><br></p>
+<p><strong>Step 1 – Understand the data:</strong> There are two datasets.</p>
+<ul>
+<li><strong>diamonds.csv</strong> contains the data used to build the regression model. </li>
+<li><strong>new_diamonds.csv</strong> contains the data for the diamonds the company would like to purchase. </li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/data-snapshot.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Both datasets contain carat, cut, and clarity data for each diamond. Only the <em>diamonds.csv</em> dataset has prices. You'll be predicting prices for the <em>new_diamonds.csv</em> dataset.</p>
+<ul>
+<li><em>Carat</em> represents the weight of the diamond, and is a numerical variable. </li>
+<li><em>Cut</em> represents the quality of the cut of the diamond, and falls into 5 categories: fair, good, very good, ideal, and premium. Each of these categories are represented by a number, 1-5, in the <em>Cut_Ord</em> variable.</li>
+<li><em>Clarity</em> represents the internal purity of the diamond, and falls into 8 categories: I1, SI2, SI1, VS1, VS2, VVS2, VVS1, and IF. Each of these categories are represented by a number, 1-8, in the <em>Clarity_Ord</em> variable.</li>
+<li><strong>Note:</strong> Transforming category variables to ordinal variables like this is not always appropriate, but we’ve done it here for simplicity.</li>
+</ul>
+<p><strong>Step 2 – Calculate the predicted price for diamond:</strong> For each diamond, plug in the values for each of the variables into the linear model (equation). Then solve the equation to get the estimated, or predicted, diamond price. We suggest using a spreadsheet tool like Excel, Numbers, or Google Sheets. You could also do it in Alteryx and/or Tableau if you already have a license. If you don't have a license yet, you'll receive one after your free trial.</p>
+<p><strong>Step 3 – Make a recommendation:</strong> Now that you have the predicted price for each diamond, it’s time to calculate the bid price for the whole set. Note: The diamond price that the model predicts represents the final retail price the consumer will pay. The company generally purchases diamonds from distributors at 70% of that price, so your recommended bid price should represent that.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="project-submission">Project Submission</h3>
+<p>To complete this project, you will be submitting a file in pdf format that contains the answers to the following questions across three steps.</p>
+<p><strong>Step 1 - Understanding the Model:</strong> </p>
+<ol>
+<li><p>According to the linear model provided, if a diamond is 1 carat heavier than another with the same cut and clarity, how much more would the retail price of the heavier diamond be? Why? </p></li>
+<li><p>If you were interested in a 1.5 carat diamond with a <em>Very Good</em> cut (represented by a 3 in the model) and a <em>VS2</em> clarity rating (represented by a 5 in the model), what retail price would the model predict for the diamond?</p></li>
+</ol>
+<p><strong>Step 2 - Visualize the Data:</strong> Create two scatter plots. If you're not sure what a scatter plot is, see <a href="https://www.mathsisfun.com/data/scatter-xy-plots.html" target="_blank">here</a>.</p>
+<ul>
+<li>Plot 1 - Plot the data for the diamonds in the database, with carat on the x-axis and price on the y-axis. </li>
+<li>Plot 2 - Plot the data for the diamonds for which you are predicting prices with carat on the x-axis and predicted price on the y-axis. </li>
+<li>Note: You can also plot both sets of data on the same chart in different colors.</li>
+<li>What strikes you about this comparison? After seeing this plot, do you feel confident in the model’s ability to predict prices? </li>
+</ul>
+<p><strong>Step 3 - The Recommendation:</strong> What bid do you recommend for the jewelry company? Please explain how you arrived at that number.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="05. Supporting Materials.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.4.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Project Details')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

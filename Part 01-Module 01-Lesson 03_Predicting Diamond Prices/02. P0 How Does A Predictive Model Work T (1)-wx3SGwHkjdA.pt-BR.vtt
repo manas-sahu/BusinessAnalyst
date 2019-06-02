@@ -1,0 +1,128 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.071 --> 00:00:03.302
+Para um modelo preditivo,
+começamos com um monte de dados
+
+00:00:03.348 --> 00:00:05.558
+nos quais o resultado
+já é conhecido.
+
+00:00:05.604 --> 00:00:07.807
+Estes dados são
+o conjunto de treinamento.
+
+00:00:07.853 --> 00:00:11.302
+Nele haverá diversas variáveis
+chamadas de variáveis preditivas,
+
+00:00:11.348 --> 00:00:14.079
+além do resultado
+ou variáveis alvo.
+
+00:00:14.125 --> 00:00:17.998
+Por exemplo, se quisermos prever
+a chance dos alunos se formarem,
+
+00:00:18.044 --> 00:00:20.318
+a partir das informações
+sobre eles,
+
+00:00:20.364 --> 00:00:22.063
+podemos treinar o modelo
+
+00:00:22.109 --> 00:00:27.385
+a partir dos dados históricos
+dos alunos que não se formaram.
+
+00:00:27.431 --> 00:00:31.068
+O conjunto de dados de treinamento
+ajuda o modelo a entender a relação
+
+00:00:31.114 --> 00:00:34.326
+entre variáveis preditivas
+e o resultado ou variáveis alvo.
+
+00:00:34.372 --> 00:00:37.310
+O modelo é então aplicado
+a um novo conjunto de dados,
+
+00:00:37.356 --> 00:00:39.477
+no qual os resultados
+são desconhecidos.
+
+00:00:39.523 --> 00:00:42.461
+Chamamos isso
+de conjunto de dados testes.
+
+00:00:42.507 --> 00:00:45.088
+No exemplo dos alunos,
+os dados testes seriam
+
+00:00:45.134 --> 00:00:46.747
+dos alunos novos
+ou existentes
+
+00:00:46.793 --> 00:00:49.689
+para os quais temos
+os dados variáveis preditivos,
+
+00:00:49.735 --> 00:00:52.781
+mas o resultado da graduação
+ainda é desconhecido.
+
+00:00:52.827 --> 00:00:55.084
+Aplicamos o modelo
+ao conjunto de dados
+
+00:00:55.130 --> 00:00:58.580
+para obter a estimativa
+de graduação de cada aluno.
+
+00:00:58.626 --> 00:01:00.351
+Quanto mais dados
+de treinamento,
+
+00:01:00.397 --> 00:01:03.061
+mais precisa será a previsão
+do modelo.
+
+00:01:03.107 --> 00:01:04.484
+Neste primeiro projeto,
+
+00:01:04.530 --> 00:01:07.972
+você utilizará um modelo preditivo
+que prevê o preço dos diamantes
+
+00:01:08.018 --> 00:01:10.006
+a partir de vários atributos.
+
+00:01:10.052 --> 00:01:13.789
+O modelo foi treinado
+com um conjunto de dados grande
+
+00:01:13.835 --> 00:01:15.730
+no qual os preços
+já são conhecidos.
+
+00:01:15.776 --> 00:01:17.431
+Usaremos os resultados
+do modelo
+
+00:01:17.477 --> 00:01:20.250
+para prever os preços
+de outro conjunto de diamantes,
+
+00:01:20.296 --> 00:01:22.492
+para o qual você receberá
+os atributos,
+
+00:01:22.538 --> 00:01:24.494
+mas cujo preço
+não é conhecido.
+
+00:01:24.540 --> 00:01:25.755
+Boa sorte.
+

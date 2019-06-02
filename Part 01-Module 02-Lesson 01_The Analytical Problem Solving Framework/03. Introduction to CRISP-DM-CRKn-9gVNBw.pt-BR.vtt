@@ -1,0 +1,53 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:02.433
+A 1ª coisa que vamos revisar
+é um framework
+
+00:00:02.467 --> 00:00:05.267
+que vai nos ajudar a decidir
+como lidar com um problema.
+
+00:00:05.300 --> 00:00:07.567
+Vamos usar uma metodologia
+que foi criada, inicialmente,
+
+00:00:07.600 --> 00:00:09.333
+para problemas
+em mineração de dados,
+
+00:00:09.367 --> 00:00:12.033
+mas que funciona bem em todos
+os tipos de problema de negócio.
+
+00:00:12.067 --> 00:00:16.800
+A metodologia é o Cross Industry
+Standard Process for Data Mining
+
+00:00:16.833 --> 00:00:18.933
+ou CRISP-DM.
+
+00:00:18.967 --> 00:00:22.700
+O framework desta aula é
+uma generalização do CRISP-DM
+
+00:00:22.733 --> 00:00:25.300
+que resolve todo tipo
+de problema de negócio.
+
+00:00:25.333 --> 00:00:29.200
+A partir daqui, vamos chamá-lo de
+framework de resolução de problemas.
+
+00:00:29.233 --> 00:00:32.400
+Vamos começar com uma revisão
+das etapas do framework.
+
+00:00:32.433 --> 00:00:33.767
+*END*
+
+00:00:33.800 --> 00:00:35.100
+*CODE*
+

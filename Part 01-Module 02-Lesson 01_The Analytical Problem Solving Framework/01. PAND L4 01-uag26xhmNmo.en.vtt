@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.450
+Project Zero is a simple example of how to apply
+
+00:00:03.450 --> 00:00:06.403
+the results of a predictive model to help make a decision.
+
+00:00:06.403 --> 00:00:07.995
+We'll come back to this project later,
+
+00:00:07.995 --> 00:00:10.105
+and you'll have a chance to build a model yourself
+
+00:00:10.105 --> 00:00:12.960
+and even improve it with the skills you learn in the first course.
+
+00:00:12.960 --> 00:00:14.685
+In the next segment,
+
+00:00:14.685 --> 00:00:17.670
+you'll learn a useful framework for taking a business problem,
+
+00:00:17.670 --> 00:00:20.331
+from problem definition to presenting results.
+
+00:00:20.330 --> 00:00:22.679
+You'll also learn the all important skill of
+
+00:00:22.679 --> 00:00:25.736
+selecting the right model or methodology for a problem.
+
+00:00:25.736 --> 00:00:28.589
+And lastly, you'll dive into linear regression models.
+
+00:00:28.589 --> 00:00:32.865
+For the project, you'll be given a business problem and some data.
+
+00:00:32.865 --> 00:00:35.594
+You'll go through the problem solving framework on your own,
+
+00:00:35.594 --> 00:00:37.109
+build a linear regression model,
+
+00:00:37.109 --> 00:00:41.060
+and then use the results to provide a recommendation.
+
+00:00:41.060 --> 00:00:44.765
+Take a look at the project overview and description before you go through the course.
+
+00:00:44.765 --> 00:00:48.000
+It will give you a good sense of the goal of the course. Good luck.
+

@@ -1,0 +1,125 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.433 --> 00:00:02.833
+Para resolver
+qualquer problema de negócio,
+
+00:00:02.867 --> 00:00:05.133
+é importante saber
+que dados são necessários
+
+00:00:05.167 --> 00:00:06.900
+e que dados estão disponíveis.
+
+00:00:06.933 --> 00:00:10.467
+O segundo passo do framework
+é entender os dados.
+
+00:00:10.500 --> 00:00:12.667
+Ter um modelo mental
+do problema de negócio
+
+00:00:12.700 --> 00:00:16.800
+vai ajudar a determinar que fatores
+vão aumentar a demanda amanhã.
+
+00:00:16.833 --> 00:00:20.167
+Por exemplo, alguns fatores
+que provavelmente serão importantes
+
+00:00:20.200 --> 00:00:23.633
+são o dia da semana,
+o mês e o ano.
+
+00:00:23.667 --> 00:00:26.500
+Também será útil saber
+a hora do dia
+
+00:00:26.533 --> 00:00:30.633
+e a temperatura àquela hora,
+e talvez até na hora anterior.
+
+00:00:30.667 --> 00:00:33.133
+Estamos tentando prever
+o uso de energia,
+
+00:00:33.167 --> 00:00:35.767
+mas não sabemos
+qual será a temperatura amanhã.
+
+00:00:35.800 --> 00:00:39.667
+Vamos ter que fazer uma previsão
+para a temperatura a qualquer hora.
+
+00:00:39.700 --> 00:00:42.433
+Agora que temos uma noção
+dos dados de que precisamos,
+
+00:00:42.467 --> 00:00:44.033
+podemos explorar
+fatores de dados
+
+00:00:44.067 --> 00:00:47.300
+que vão nos ajudar a prever
+a temperatura a cada hora.
+
+00:00:47.333 --> 00:00:51.333
+Assim, podemos procurar a previsão
+de temperaturas máxima e mínima
+
+00:00:51.367 --> 00:00:53.400
+do serviço meteorológico
+nacional,
+
+00:00:53.433 --> 00:00:56.800
+o número de minutos do nascer
+do sol ao início de cada hora
+
+00:00:56.833 --> 00:01:00.733
+e a temperatura à mesma hora
+no dia anterior.
+
+00:01:00.767 --> 00:01:03.167
+Os dados disponíveis serão
+importantes para decidir
+
+00:01:03.200 --> 00:01:06.167
+o tipo de metodologia
+que pode ser usado.
+
+00:01:06.200 --> 00:01:09.733
+Além disso, a compreensão total
+dos dados é importante
+
+00:01:09.767 --> 00:01:11.867
+para garantir
+uma análise correta.
+
+00:01:11.900 --> 00:01:15.800
+Por exemplo, se tiver dados sobre
+o número de funcionários por mês,
+
+00:01:15.833 --> 00:01:18.567
+talvez seja importante saber
+se o valor representa
+
+00:01:18.600 --> 00:01:21.867
+o número de funcionários no início
+ou no fim do mês
+
+00:01:21.900 --> 00:01:25.967
+ou a média de funcionários
+no início e no fim do mês.
+
+00:01:26.000 --> 00:01:30.100
+Uma compreensão errada dos dados
+pode gerar análises incorretas.
+
+00:01:30.133 --> 00:01:31.467
+*END*
+
+00:01:31.500 --> 00:01:32.800
+*CODE*
+

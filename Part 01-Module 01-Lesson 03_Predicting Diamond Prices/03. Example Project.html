@@ -1,0 +1,192 @@
+<!-- udacimak v1.4.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Example Project</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Predicting Diamond Prices</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Introducing your first project.html">01. Introducing your first project</a>
+    </li>
+    <li class="">
+      <a href="02. Introduction to Predictive Models.html">02. Introduction to Predictive Models</a>
+    </li>
+    <li class="">
+      <a href="03. Example Project.html">03. Example Project</a>
+    </li>
+    <li class="">
+      <a href="04. Project Details.html">04. Project Details</a>
+    </li>
+    <li class="">
+      <a href="05. Supporting Materials.html">05. Supporting Materials</a>
+    </li>
+    <li class="">
+      <a href="Project Description - Predicting Diamond Prices.html">Project Description - Predicting Diamond Prices</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - Predicting Diamond Prices.html">Project Rubric - Predicting Diamond Prices</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">03. Example Project</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="example-predicting-home-prices">Example: Predicting Home Prices</h1>
+<p>The purpose of this section is to give you an idea of what a finished project should look like. This example uses a different data set than the one you will be using for the project but it follows the same pattern.</p>
+<p>The scenario for this example project is that a group of real estate investors are looking to put a bid on a group of 10 homes that have come up for sale. They want a 20% margin so they can make a profit when they resell the homes. Your job is to predict the price for the homes up for bid and then factor in the margin to give the investors a final bid amount to make for these houses.</p>
+<p>At the bottom of the page you will see a project submission template that has a set questions for you to answer. You will also see a completed project submission for your review.</p>
+<p>Also, at the bottom of the page you will find an Excel workbook. One of the sheets in that workbook contains the past home sales (Past Sales Data). The past home sales data was used to build a linear regression model, which produced a formula to help predict a home's value based tells on the number of bedrooms, bathrooms, and the square footage of the home. That formula is:</p>
+<p>price = 51880.41 + 44.72 * square feet + 52613.9 * bedrooms + 27513.48 * bathrooms</p>
+<p>(<em>This is based on fake data</em>)</p>
+<p>This formula is then applied to the homes up for bid, which you can see in the predicted price column in the <em>Homes up for Bid</em> worksheet.</p>
+<p>Lastly, <em>Data Combined for Graph</em> shows how to graph bedroom vs. price for both the past home sales and predicted prices of the homes up for bid.</p>
+<h1 id="please-use-this-project-submission-as-an-example-to-help-you-on-the-predicting-diamond-prices-project">Please use this project submission as an example to help you on the Predicting Diamond Prices Project.</h1>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="04. Project Details.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.4.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Example Project')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

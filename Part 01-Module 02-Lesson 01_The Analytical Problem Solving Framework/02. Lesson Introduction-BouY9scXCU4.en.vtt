@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.540 --> 00:00:06.540
+Hi, my name is Patrick Nussbaumer and
+I'll be your instructor for this course.
+
+00:00:06.540 --> 00:00:09.898
+I work for Alteryx,
+a leader in self-service data analytics.
+
+00:00:09.898 --> 00:00:13.540
+And have worked with data acquisition
+and analysis for over 20 years.
+
+00:00:13.540 --> 00:00:15.420
+In this course,
+
+00:00:15.420 --> 00:00:18.900
+we'll be learning how to approach
+a business problem using analytics.
+
+00:00:18.900 --> 00:00:22.570
+Let's talk about an example that we'll
+reference throughout this course.
+
+00:00:22.570 --> 00:00:24.260
+Let's consider this scenario.
+
+00:00:24.260 --> 00:00:28.020
+You recently joined a multinational
+firm that provides automated robots
+
+00:00:28.020 --> 00:00:30.210
+that vacuum office spaces.
+
+00:00:30.210 --> 00:00:32.570
+For larger office spaces,
+more robots are needed,
+
+00:00:32.570 --> 00:00:37.110
+and the software configuration to
+run the robots becomes more complex.
+
+00:00:37.110 --> 00:00:41.090
+To support your clients, you have a help
+desk that manages support tickets.
+
+00:00:41.090 --> 00:00:44.440
+Due to the nature of the business, it's
+critical that the help desk is staffed
+
+00:00:44.440 --> 00:00:48.470
+properly to ensure smooth operation
+of the army of cleaning robots.
+
+00:00:48.470 --> 00:00:51.400
+Your manager has tasked you with
+the following business problem.
+
+00:00:51.400 --> 00:00:54.640
+We're onboarding a new client next
+month as part of a very large deal.
+
+00:00:54.640 --> 00:00:58.220
+It's critical that we support them
+with our excellent service levels.
+
+00:00:58.220 --> 00:01:01.930
+I need to know how many tickets per
+week on average we can expect from this
+
+00:01:01.930 --> 00:01:05.590
+client so we can ensure we have
+enough help desk resources in place.
+
+00:01:06.850 --> 00:01:10.440
+But before we attempt to solve this
+problem, we need to spend some time
+
+00:01:10.440 --> 00:01:14.080
+discussing how to approach business
+problems with analytics and
+
+00:01:14.080 --> 00:01:14.860
+predictive models.
+
+00:01:16.200 --> 00:01:18.511
+First, we're going to
+discuss a framework for
+
+00:01:18.511 --> 00:01:20.730
+solving analytical problems.
+
+00:01:20.730 --> 00:01:24.448
+Second, we'll talk about
+non-predictive data analysis.
+
+00:01:24.448 --> 00:01:26.560
+And third,
+we'll return to our business problem and
+
+00:01:26.560 --> 00:01:30.590
+talk about predictive analysis, which
+will lead us to review a process for
+
+00:01:30.590 --> 00:01:31.830
+selecting the right predictive model.
+
+00:01:33.040 --> 00:01:36.360
+And lastly, we're going to discuss
+linear regressions, which is
+
+00:01:36.360 --> 00:01:39.012
+the technique we'll use to solve our
+support ticket business problem.
+
+00:01:40.420 --> 00:01:42.110
+All right, let's get going.
+

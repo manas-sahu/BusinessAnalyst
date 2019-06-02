@@ -1,0 +1,140 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:01.367 --> 00:00:06.300
+Oi, meu nome é Patrick Nussbaumer.
+Serei seu instrutor neste curso.
+
+00:00:06.333 --> 00:00:09.934
+Trabalho na Alteryx, líder
+em análise de dados self-service
+
+00:00:09.968 --> 00:00:14.033
+e trabalhei com aquisição e análise
+de dados por mais de 20 anos.
+
+00:00:14.234 --> 00:00:17.033
+Neste curso, vamos aprender
+a resolver problemas de negócio
+
+00:00:17.066 --> 00:00:18.734
+usando a análise de dados.
+
+00:00:18.767 --> 00:00:22.334
+Vamos falar de um exemplo
+que servirá de base para o curso.
+
+00:00:22.501 --> 00:00:24.167
+Vamos considerar
+este cenário:
+
+00:00:24.200 --> 00:00:26.100
+você acabou de entrar
+para uma multinacional
+
+00:00:26.133 --> 00:00:30.033
+que fornece robôs automatizados
+para a limpeza de escritórios.
+
+00:00:30.067 --> 00:00:32.968
+Em escritórios maiores,
+mais robôs são necessários,
+
+00:00:33.000 --> 00:00:36.968
+e a configuração do software que
+controla os robôs é mais complexa.
+
+00:00:37.000 --> 00:00:38.567
+Para dar suporte aos clientes,
+
+00:00:38.601 --> 00:00:40.968
+você tem um serviço
+que cuida da abertura dos chamados.
+
+00:00:41.000 --> 00:00:43.901
+Devido à natureza do negócio,
+é essencial que esse serviço
+
+00:00:43.934 --> 00:00:46.300
+tenha uma boa equipe
+para garantir a operação correta
+
+00:00:46.334 --> 00:00:48.667
+do exército
+de robôs faxineiros.
+
+00:00:48.701 --> 00:00:51.300
+Seu gerente passou a você
+o seguinte problema:
+
+00:00:51.334 --> 00:00:54.534
+"Vamos obter um cliente no próximo
+mês por causa de um grande acordo.
+
+00:00:54.567 --> 00:00:58.033
+É essencial que a empresa
+dê um suporte excelente a ele.
+
+00:00:58.067 --> 00:01:00.834
+Tenho que saber quantos chamados
+por semana, em média,
+
+00:01:00.868 --> 00:01:02.434
+podemos esperar desse cliente
+
+00:01:02.467 --> 00:01:06.200
+para saber se temos recursos
+suficientes em nosso suporte."
+
+00:01:06.667 --> 00:01:08.868
+Mas, antes de tentarmos
+solucionar esse problema,
+
+00:01:08.901 --> 00:01:12.400
+precisamos passar algum tempo
+discutindo como resolver problemas
+
+00:01:12.434 --> 00:01:15.400
+através da análise de dados
+e modelos preditivos.
+
+00:01:16.033 --> 00:01:18.367
+Primeiro, vamos discutir
+um framework
+
+00:01:18.400 --> 00:01:20.601
+para solucionar
+problemas analíticos.
+
+00:01:20.634 --> 00:01:24.033
+Depois, vamos falar sobre
+análise de dados não preditiva.
+
+00:01:24.067 --> 00:01:26.400
+Em seguida, vamos voltar
+ao nosso problema
+
+00:01:26.434 --> 00:01:28.234
+e falar
+sobre análise preditiva,
+
+00:01:28.267 --> 00:01:30.367
+o que vai nos fazer
+revisar processos
+
+00:01:30.400 --> 00:01:32.868
+para selecionar
+o modelo preditivo correto.
+
+00:01:32.901 --> 00:01:35.968
+Por fim, vamos discutir
+regressões lineares -
+
+00:01:36.001 --> 00:01:39.534
+a técnica que usaremos para resolver
+o problema do suporte técnico.
+
+00:01:40.234 --> 00:01:42.667
+Está bem? Vamos começar.
+

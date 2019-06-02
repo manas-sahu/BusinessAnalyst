@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.715
+To build a predictive model,
+
+00:00:01.715 --> 00:00:05.415
+you first start with a bunch of data where the outcome is already known.
+
+00:00:05.415 --> 00:00:07.760
+This data is called the training set.
+
+00:00:07.760 --> 00:00:10.020
+The training set will have several variables,
+
+00:00:10.020 --> 00:00:14.065
+called predictor variables, as well as the outcome or target variable.
+
+00:00:14.065 --> 00:00:17.340
+For example, if you want to predict the likelihood that a student
+
+00:00:17.340 --> 00:00:20.730
+will graduate based on some information you have about them,
+
+00:00:20.730 --> 00:00:23.460
+you train your model using historical data on
+
+00:00:23.460 --> 00:00:27.160
+students for whom you already know whether or not they graduated.
+
+00:00:27.160 --> 00:00:30.240
+The training dataset helps the model understand
+
+00:00:30.240 --> 00:00:34.210
+the relationship between predictor variables and the outcome or target variable.
+
+00:00:34.210 --> 00:00:39.390
+The model is then applied to a new dataset where the outcomes are not yet known.
+
+00:00:39.390 --> 00:00:42.395
+We call this dataset the Test dataset.
+
+00:00:42.395 --> 00:00:43.960
+In the students example,
+
+00:00:43.960 --> 00:00:46.040
+the test data would be new or existing
+
+00:00:46.040 --> 00:00:49.570
+students for whom we have the predictor variable data,
+
+00:00:49.570 --> 00:00:52.660
+but the graduation outcome is not yet known.
+
+00:00:52.660 --> 00:00:55.400
+You apply the model to that dataset to get
+
+00:00:55.400 --> 00:00:58.500
+an estimate of the likelihood each student will graduate.
+
+00:00:58.500 --> 00:01:00.390
+The more training data you have,
+
+00:01:00.390 --> 00:01:03.150
+the more accurately the model can predict outcomes.
+
+00:01:03.150 --> 00:01:04.545
+In this first project,
+
+00:01:04.545 --> 00:01:06.920
+you'll use a predictive model designed to predict
+
+00:01:06.920 --> 00:01:10.015
+the price of diamonds based on their various attributtes.
+
+00:01:10.015 --> 00:01:12.200
+The model has already been trained using
+
+00:01:12.200 --> 00:01:15.725
+a large dataset of diamonds where the prices are already known.
+
+00:01:15.725 --> 00:01:18.950
+You'll be using the results of the model to predict prices for
+
+00:01:18.950 --> 00:01:22.580
+another set of diamonds for which you will have their attributes,
+
+00:01:22.580 --> 00:01:25.890
+but the price is not known. Good luck.
+

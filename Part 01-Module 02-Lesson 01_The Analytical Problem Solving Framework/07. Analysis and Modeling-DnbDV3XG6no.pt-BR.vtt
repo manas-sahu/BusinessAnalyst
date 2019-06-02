@@ -1,0 +1,135 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.467 --> 00:00:02.200
+Depois que os dados
+são preparados,
+
+00:00:02.267 --> 00:00:04.800
+o próximo passo
+é fazer a análise
+
+00:00:04.867 --> 00:00:07.933
+e, caso seja necessário,
+criar um modelo para o problema.
+
+00:00:08.000 --> 00:00:12.000
+Há vários métodos disponíveis
+para fazer a análise.
+
+00:00:12.067 --> 00:00:15.000
+Na próxima aula deste curso,
+vamos dar mais detalhes
+
+00:00:15.067 --> 00:00:17.600
+de como escolher a metodologia
+e o método de modelagem
+
+00:00:17.667 --> 00:00:20.133
+mais apropriados
+para o seu cenário.
+
+00:00:20.200 --> 00:00:21.867
+Usaremos o exemplo
+da companhia elétrica
+
+00:00:21.934 --> 00:00:23.867
+para explicar melhor
+este passo.
+
+00:00:23.933 --> 00:00:26.467
+Mais cedo, no framework
+de resolução de problemas,
+
+00:00:26.533 --> 00:00:30.000
+determinamos que precisávamos
+prever a temperatura do dia seguinte
+
+00:00:30.067 --> 00:00:32.600
+usando alguns dos fatores
+que identificamos.
+
+00:00:32.667 --> 00:00:35.467
+Depois, vamos prever
+o consumo de energia
+
+00:00:35.533 --> 00:00:38.800
+usando a temperatura prevista
+e outros fatores.
+
+00:00:38.867 --> 00:00:41.333
+Então vamos começar
+construindo um modelo preditivo
+
+00:00:41.400 --> 00:00:44.333
+que nos ajude a prever
+a temperatura para o dia seguinte.
+
+00:00:44.400 --> 00:00:48.267
+Identificamos vários fatores que
+podem ajudar a prever a temperatura,
+
+00:00:48.333 --> 00:00:50.600
+mas vamos começar com um
+para criar um modelo inicial
+
+00:00:50.667 --> 00:00:52.467
+e aprender durante o processo.
+
+00:00:52.533 --> 00:00:55.600
+Depois que criarmos o 1º modelo,
+vamos validá-lo
+
+00:00:55.667 --> 00:00:59.533
+e ver se vamos precisar atualizar
+o modelo com mais informações.
+
+00:00:59.600 --> 00:01:03.200
+Depois que tivermos um modelo para
+prever a temperatura de modo certo,
+
+00:01:03.267 --> 00:01:06.467
+vamos repetir o processo
+para prever o consumo de energia.
+
+00:01:06.533 --> 00:01:08.933
+Depois de criar um modelo
+que pareça correto
+
+00:01:09.000 --> 00:01:12.733
+e preveja o consumo de energia
+em determinada hora do dia seguinte,
+
+00:01:12.800 --> 00:01:14.800
+vamos ter que fazer a análise.
+
+00:01:14.867 --> 00:01:17.333
+Isso pode incluir o número
+de centrais elétricas necessárias
+
+00:01:17.400 --> 00:01:20.333
+para uma determinada temperatura
+e os limites que determinam
+
+00:01:20.400 --> 00:01:24.400
+quando devemos ligar novas centrais
+ou comprar energia no mercado.
+
+00:01:24.467 --> 00:01:27.400
+Provavelmente faremos
+a análise várias vezes,
+
+00:01:27.467 --> 00:01:29.733
+até começarmos a confiar nela.
+
+00:01:29.800 --> 00:01:32.933
+Então vamos discutir como chegar
+ao nível de confiança necessário.
+
+00:01:33.067 --> 00:01:34.400
+*END*
+
+00:01:34.467 --> 00:01:35.733
+*CODE*
+

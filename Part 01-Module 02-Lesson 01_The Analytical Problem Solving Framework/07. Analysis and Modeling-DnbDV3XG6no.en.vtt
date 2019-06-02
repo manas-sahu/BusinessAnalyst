@@ -1,0 +1,119 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.640 --> 00:00:05.190
+After the data is prepared, the next
+step is to perform the analysis and,
+
+00:00:05.190 --> 00:00:07.040
+if appropriate, model the problem.
+
+00:00:08.119 --> 00:00:12.260
+There are a number of different methods
+available for performing the analysis.
+
+00:00:12.260 --> 00:00:15.940
+In the next lesson of this course,
+we'll go into detail on how to select
+
+00:00:15.940 --> 00:00:20.350
+the methodology and modeling method
+that is best suited for your scenario.
+
+00:00:20.350 --> 00:00:23.120
+Let's use our electricity example
+to elaborate on this step.
+
+00:00:24.150 --> 00:00:26.710
+Earlier, in the problem
+solving framework,
+
+00:00:26.710 --> 00:00:29.180
+we determined that we needed
+to predict the temperature for
+
+00:00:29.180 --> 00:00:32.850
+the next day using some of
+the factors we identified.
+
+00:00:32.850 --> 00:00:36.629
+And then, we are going to predict the
+electricity usage using the predicted
+
+00:00:36.629 --> 00:00:39.040
+temperature as well as other factors.
+
+00:00:39.040 --> 00:00:41.570
+So we start by building
+out a predictive model
+
+00:00:41.570 --> 00:00:44.560
+that helps us predict
+the temperature for the next day.
+
+00:00:44.560 --> 00:00:47.410
+We have identified a number of
+factors that may be good at predicting
+
+00:00:47.410 --> 00:00:48.510
+temperature.
+
+00:00:48.510 --> 00:00:50.930
+But we'll start with one to
+create our initial model and
+
+00:00:50.930 --> 00:00:52.740
+learn during the process.
+
+00:00:52.740 --> 00:00:55.533
+Once we have created our first model,
+we'll validate it and
+
+00:00:55.533 --> 00:00:59.760
+then determine if we need to update
+the model with additional information.
+
+00:00:59.760 --> 00:01:02.755
+Once we have a model that we can
+confidently predict temperature with,
+
+00:01:02.755 --> 00:01:06.760
+we'll repeat the process to
+predict electricity usage.
+
+00:01:06.760 --> 00:01:09.160
+After creating a model that
+we're comfortable with,
+
+00:01:09.160 --> 00:01:11.020
+one that predicts electricity usage for
+
+00:01:11.020 --> 00:01:14.930
+a given hour on the next day,
+we need to perform our analysis.
+
+00:01:14.930 --> 00:01:17.650
+This may include the number of
+electricity plants that we need for
+
+00:01:17.650 --> 00:01:21.440
+any given temperature, as well as
+the thresholds when we need to activate
+
+00:01:21.440 --> 00:01:24.590
+additional plants or
+purchase electricity on the market.
+
+00:01:24.590 --> 00:01:27.610
+We'll probably perform
+the analysis step multiple times
+
+00:01:27.610 --> 00:01:30.000
+until we have confidence
+in our analysis.
+
+00:01:30.000 --> 00:01:32.500
+So let's discuss how we get the level
+of confidence that we need.
+
