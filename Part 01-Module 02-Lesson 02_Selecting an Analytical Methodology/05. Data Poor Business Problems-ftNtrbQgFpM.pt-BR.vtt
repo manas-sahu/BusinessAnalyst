@@ -1,0 +1,78 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.333 --> 00:00:03.533
+Se não tivermos dados suficientes
+para resolver o problema,
+
+00:00:03.567 --> 00:00:07.267
+temos que criar um experimento para
+obter os dados de que precisamos.
+
+00:00:07.300 --> 00:00:09.133
+Um experimento
+no contexto empresarial
+
+00:00:09.167 --> 00:00:11.867
+costuma ser chamado
+de Teste A/B.
+
+00:00:11.900 --> 00:00:15.167
+Por exemplo, você quer saber como
+a substituição de um produto antigo
+
+00:00:15.200 --> 00:00:18.000
+por um produto novo
+vai impactar suas vendas.
+
+00:00:18.033 --> 00:00:20.767
+Como você não tem dados
+sobre as vendas do novo produto,
+
+00:00:20.800 --> 00:00:24.167
+você não tem dados para criar
+modelos nem previsões.
+
+00:00:24.200 --> 00:00:25.967
+Para determinar as vendas
+do novo produto,
+
+00:00:26.000 --> 00:00:27.600
+você pode criar
+um experimento.
+
+00:00:27.633 --> 00:00:30.467
+Você pode colocar o novo produto
+à venda em algumas lojas
+
+00:00:30.500 --> 00:00:32.467
+para ajudar a estimar
+o impacto dele nas vendas
+
+00:00:32.500 --> 00:00:35.400
+caso você o coloque à venda
+em todas as lojas.
+
+00:00:35.433 --> 00:00:38.700
+Escolher qualquer loja para
+o experimento não vai funcionar bem.
+
+00:00:38.733 --> 00:00:41.533
+Por isso, é importante
+planejar o experimento
+
+00:00:41.567 --> 00:00:44.006
+para poder usar o resultado
+em outras lojas.
+
+00:00:44.633 --> 00:00:49.165
+Eu explico isso em mais detalhes
+em um curso dedicado aos Testes A/B.
+
+00:00:49.333 --> 00:00:50.633
+*END*
+
+00:00:50.667 --> 00:00:51.967
+*CODE*
+

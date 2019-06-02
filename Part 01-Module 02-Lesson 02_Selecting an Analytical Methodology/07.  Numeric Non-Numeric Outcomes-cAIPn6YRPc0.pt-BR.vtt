@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.433 --> 00:00:02.433
+Vamos ver alguns exemplos
+de como prever
+
+00:00:02.466 --> 00:00:04.867
+resultados numéricos
+e não numéricos.
+
+00:00:04.900 --> 00:00:08.400
+Vamos usar estes exemplos
+durante o resto da aula.
+
+00:00:08.433 --> 00:00:11.333
+Vamos usar três exemplos:
+um fabricante de triciclos,
+
+00:00:11.367 --> 00:00:13.873
+uma empresa de marketing
+e um banco.
+
+00:00:15.033 --> 00:00:17.800
+No 1º exemplo, imagine
+que um fabricante
+
+00:00:17.833 --> 00:00:21.500
+usou os dados históricos de produção
+para saber quantos triciclos
+
+00:00:21.533 --> 00:00:25.633
+vai ter que produzir para atender
+a demanda nos 6 meses seguintes.
+
+00:00:26.400 --> 00:00:29.833
+Como o resultado que o fabricante
+quer prever é um número,
+
+00:00:29.867 --> 00:00:32.333
+então as variáveis-alvo
+são numéricas.
+
+00:00:32.367 --> 00:00:35.333
+Logo, ele usaria um modelo
+numérico ou de regressão
+
+00:00:35.367 --> 00:00:37.100
+para solucionar
+este problema.
+
+00:00:38.200 --> 00:00:43.733
+No exemplo 2, uma pizzaria quer usar
+dados sobre as vendas em suas lojas
+
+00:00:43.767 --> 00:00:46.633
+e os dados demográficos
+das regiões que as cercam
+
+00:00:46.667 --> 00:00:51.167
+para prever quantas pizzas
+sua nova loja vai vender.
+
+00:00:51.200 --> 00:00:53.767
+Como o resultado que a pizzaria
+está tentando prever
+
+00:00:53.800 --> 00:00:57.367
+é o número de pizzas,
+então a variável-alvo é numérica,
+
+00:00:57.400 --> 00:01:01.033
+e eles usariam um modelo numérico
+ou de regressão neste problema.
+
+00:01:02.567 --> 00:01:07.267
+No 3º exemplo, um banco quer usar
+o histórico de seus clientes
+
+00:01:07.300 --> 00:01:10.100
+para saber se um novo cliente
+vai deixar de pagar um empréstimo,
+
+00:01:10.133 --> 00:01:13.200
+sempre pagar a tempo
+ou pagar algumas parcelas.
+
+00:01:13.233 --> 00:01:15.199
+Como o resultado que o banco
+está tentando prever
+
+00:01:15.232 --> 00:01:18.200
+é a categoria em que
+o novo cliente vai se encaixar,
+
+00:01:18.233 --> 00:01:22.567
+ele usaria modelos não numéricos
+ou de classificação neste problema.
+
+00:01:26.667 --> 00:01:27.967
+*END*
+
+00:01:28.000 --> 00:01:29.300
+*CODE*
+

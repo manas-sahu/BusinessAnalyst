@@ -1,0 +1,71 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.700 --> 00:00:04.567
+Dividimos análises de dados
+não preditivas em 4 categorias:
+
+00:00:04.600 --> 00:00:09.700
+geoespacial, segmentação,
+agregação e descritiva.
+
+00:00:09.733 --> 00:00:11.933
+Vamos falar de cada categoria.
+
+00:00:12.100 --> 00:00:15.000
+Primeiro, o que é
+a análise geoespacial?
+
+00:00:15.033 --> 00:00:17.900
+Esse tipo de análise usa
+dados localizacionais
+
+00:00:17.933 --> 00:00:20.100
+para ajudar
+a obter conclusões.
+
+00:00:20.133 --> 00:00:21.800
+Alguns exemplos disso são:
+
+00:00:21.833 --> 00:00:24.500
+identificar clientes
+a partir de um aspecto geográfico,
+
+00:00:24.533 --> 00:00:27.367
+como o CEP, o estado
+ou a região;
+
+00:00:27.400 --> 00:00:30.800
+calcular a distância entre
+certos endereços e suas lojas,
+
+00:00:30.833 --> 00:00:34.300
+ou criar uma área de comércio usando
+a localização dos seus clientes
+
+00:00:34.333 --> 00:00:36.733
+para fazer mais análises.
+
+00:00:36.767 --> 00:00:41.100
+Certas análises geoespaciais
+exigem softwares especiais,
+
+00:00:41.133 --> 00:00:44.767
+como programas que podem transformar
+endereços em latitudes e longitudes
+
+00:00:44.800 --> 00:00:47.433
+ou softwares que podem calcular
+o tempo de deslocamento
+
+00:00:47.467 --> 00:00:49.800
+entre duas localizações geográficas
+num mapa.
+
+00:00:49.833 --> 00:00:51.167
+*END*
+
+00:00:51.200 --> 00:00:52.500
+*CODE*
+

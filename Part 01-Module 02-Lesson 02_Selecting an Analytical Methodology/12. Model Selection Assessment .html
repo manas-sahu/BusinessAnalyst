@@ -1,0 +1,716 @@
+<!-- udacimak v1.4.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Model Selection Assessment </title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Selecting an Analytical Methodology</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Selecting an Analytical Methodology.html">01. Selecting an Analytical Methodology</a>
+    </li>
+    <li class="">
+      <a href="02. Non-Predictive Business Problems.html">02. Non-Predictive Business Problems</a>
+    </li>
+    <li class="">
+      <a href="03. Classifying Business Problems.html">03. Classifying Business Problems</a>
+    </li>
+    <li class="">
+      <a href="04. Predictive Business Problems.html">04. Predictive Business Problems</a>
+    </li>
+    <li class="">
+      <a href="05. Data Poor Business Problems.html">05. Data Poor Business Problems</a>
+    </li>
+    <li class="">
+      <a href="06. Data Rich Business Problems.html">06. Data Rich Business Problems</a>
+    </li>
+    <li class="">
+      <a href="07. Numeric  Non-Numeric Outcomes.html">07. Numeric &amp; Non-Numeric Outcomes</a>
+    </li>
+    <li class="">
+      <a href="08. Numeric or Classification Quiz.html">08. Numeric or Classification Quiz</a>
+    </li>
+    <li class="">
+      <a href="09. Introduction to Numeric Models.html">09. Introduction to Numeric Models</a>
+    </li>
+    <li class="">
+      <a href="10. Introduction to Non-Numeric Models.html">10. Introduction to Non-Numeric Models</a>
+    </li>
+    <li class="">
+      <a href="11. Determining Appropriate Models Quiz.html">11. Determining Appropriate Models Quiz</a>
+    </li>
+    <li class="">
+      <a href="12. Model Selection Assessment .html">12. Model Selection Assessment </a>
+    </li>
+    <li class="">
+      <a href="13. Lesson Summary.html">13. Lesson Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">12. Model Selection Assessment </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>Intro</p></h3>
+  <div>
+  <h1 id="methodology-map-assessment">Methodology Map Assessment</h1>
+<p>Now that we’ve gone through several scenarios, let’s get some more practice determining the right methodology for a variety of business problems. For each of the following descriptions, select the correct methodology. Use the methodology map as a guide to help make the decision.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Methodology Map</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/methodology-map.jpg" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q10</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A large bank is contemplating changing operating hours at all of its bank branches. They want to use a data-driven way to estimate the impact of changing the operating hours before rolling out the change to all its branches.</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453933855" name="186735" id="a1473453933855">
+        <label for="a1473453933855"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453934191" name="186735" id="a1473453934191">
+        <label for="a1473453934191"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453934751" name="186735" id="a1473453934751">
+        <label for="a1473453934751"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453935390" name="186735" id="a1473453935390">
+        <label for="a1473453935390"><p>Non Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453935855" name="186735" id="a1473453935855">
+        <label for="a1473453935855"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453936535" name="186735" id="a1473453936535">
+        <label for="a1473453936535"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    A/B Testing
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q1</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A high-end home goods manufacture wants to determine which customers in their mailing list are most likely to make a purchase if a catalog was sent to them. </p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473451165046" name="186721" id="a1473451165046">
+        <label for="a1473451165046"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473451165528" name="186721" id="a1473451165528">
+        <label for="a1473451165528"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473451165930" name="186721" id="a1473451165930">
+        <label for="a1473451165930"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473451166265" name="186721" id="a1473451166265">
+        <label for="a1473451166265"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473451166913" name="186721" id="a1473451166913">
+        <label for="a1473451166913"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473451167401" name="186721" id="a1473451167401">
+        <label for="a1473451167401"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Binary
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q2</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>That same high-end home goods manufacture now wants to determine how much revenue they can expect if they send a catalog to their entire mailing list. </p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473452983346" name="186722" id="a1473452983346">
+        <label for="a1473452983346"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473452983730" name="186722" id="a1473452983730">
+        <label for="a1473452983730"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473452984115" name="186722" id="a1473452984115">
+        <label for="a1473452984115"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473452984491" name="186722" id="a1473452984491">
+        <label for="a1473452984491"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473452984907" name="186722" id="a1473452984907">
+        <label for="a1473452984907"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453010465" name="186722" id="a1473453010465">
+        <label for="a1473453010465"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Continuous
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q3</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A pet store chain has 13 stores and would like to expand and open a 14th store. In order to determine the best location, the company wants to predict the sales it could expect from each potential location. </p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453085738" name="186724" id="a1473453085738">
+        <label for="a1473453085738"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453086234" name="186724" id="a1473453086234">
+        <label for="a1473453086234"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453086626" name="186724" id="a1473453086626">
+        <label for="a1473453086626"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453087386" name="186724" id="a1473453087386">
+        <label for="a1473453087386"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453087850" name="186724" id="a1473453087850">
+        <label for="a1473453087850"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453088570" name="186724" id="a1473453088570">
+        <label for="a1473453088570"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Continuous
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q5</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A small bank suddenly has an influx of new people applying for loans. It wants to determine which loan applicants are creditworthy by predicting whether or not each applicant is likely to default on their loan.</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453147305" name="186725" id="a1473453147305">
+        <label for="a1473453147305"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453147651" name="186725" id="a1473453147651">
+        <label for="a1473453147651"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453148833" name="186725" id="a1473453148833">
+        <label for="a1473453148833"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453149369" name="186725" id="a1473453149369">
+        <label for="a1473453149369"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453149817" name="186725" id="a1473453149817">
+        <label for="a1473453149817"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453151297" name="186725" id="a1473453151297">
+        <label for="a1473453151297"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Binary
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q6</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>An upscale coffee chain wants to know whether a television campaign about their recent introduction of gourmet-sandwiches will provide a good return on investment. </p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453232401" name="186726" id="a1473453232401">
+        <label for="a1473453232401"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453232825" name="186726" id="a1473453232825">
+        <label for="a1473453232825"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453233169" name="186726" id="a1473453233169">
+        <label for="a1473453233169"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453233585" name="186726" id="a1473453233585">
+        <label for="a1473453233585"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453233945" name="186726" id="a1473453233945">
+        <label for="a1473453233945"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453234344" name="186726" id="a1473453234344">
+        <label for="a1473453234344"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    A/B Testing
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Non-predictive</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A restaurant chain wants to see how much revenue each of its locations produced last year.</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473454722789" name="186739" id="a1473454722789">
+        <label for="a1473454722789"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454723230" name="186739" id="a1473454723230">
+        <label for="a1473454723230"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454724252" name="186739" id="a1473454724252">
+        <label for="a1473454724252"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454724628" name="186739" id="a1473454724628">
+        <label for="a1473454724628"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454725053" name="186739" id="a1473454725053">
+        <label for="a1473454725053"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454725532" name="186739" id="a1473454725532">
+        <label for="a1473454725532"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Non-Predictive
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q7</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A company that creates and sells video games wants to forecast monthly sales data in order to synchronize supply with demand, aid in decision making that will help build a competitive infrastructure and measure company performance. </p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453311419" name="186727" id="a1473453311419">
+        <label for="a1473453311419"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453311882" name="186727" id="a1473453311882">
+        <label for="a1473453311882"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453312217" name="186727" id="a1473453312217">
+        <label for="a1473453312217"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453312833" name="186727" id="a1473453312833">
+        <label for="a1473453312833"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453313266" name="186727" id="a1473453313266">
+        <label for="a1473453313266"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453314185" name="186727" id="a1473453314185">
+        <label for="a1473453314185"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Time Based
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q8</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A friend of yours is looking to find a good deal on a diamond for his soon to be fiancé. He has a large dataset of diamonds and wants to predict what the price of each diamond should be based on its physical attributes.</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453386256" name="186729" id="a1473453386256">
+        <label for="a1473453386256"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453387193" name="186729" id="a1473453387193">
+        <label for="a1473453387193"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453387632" name="186729" id="a1473453387632">
+        <label for="a1473453387632"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453388064" name="186729" id="a1473453388064">
+        <label for="a1473453388064"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453389192" name="186729" id="a1473453389192">
+        <label for="a1473453389192"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453389600" name="186729" id="a1473453389600">
+        <label for="a1473453389600"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Continuous
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q9</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A university is concerned about dropouts. They want to be able to predict whether a student is likely to drop out so they can provide helpful interventions to help them succeed.</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453527506" name="186734" id="a1473453527506">
+        <label for="a1473453527506"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453527903" name="186734" id="a1473453527903">
+        <label for="a1473453527903"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453528199" name="186734" id="a1473453528199">
+        <label for="a1473453528199"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453528751" name="186734" id="a1473453528751">
+        <label for="a1473453528751"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453529072" name="186734" id="a1473453529072">
+        <label for="a1473453529072"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453530055" name="186734" id="a1473453530055">
+        <label for="a1473453530055"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Binary
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q11</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A large grocery chain wants to understand whether a change from a link to an image on its website will lead to more mobile app downloads. </p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473454004407" name="186737" id="a1473454004407">
+        <label for="a1473454004407"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454004847" name="186737" id="a1473454004847">
+        <label for="a1473454004847"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454005230" name="186737" id="a1473454005230">
+        <label for="a1473454005230"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454005511" name="186737" id="a1473454005511">
+        <label for="a1473454005511"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454006055" name="186737" id="a1473454006055">
+        <label for="a1473454006055"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454006457" name="186737" id="a1473454006457">
+        <label for="a1473454006457"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    A/B Testing
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q12</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A mountain resort wants to predict the number of monthly room bookings it will have next year to help decide whether it should expand.</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473454070754" name="186738" id="a1473454070754">
+        <label for="a1473454070754"><p>Continuous</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454071071" name="186738" id="a1473454071071">
+        <label for="a1473454071071"><p>Time Based</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454071591" name="186738" id="a1473454071591">
+        <label for="a1473454071591"><p>Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454071991" name="186738" id="a1473454071991">
+        <label for="a1473454071991"><p>Non-Binary</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454072382" name="186738" id="a1473454072382">
+        <label for="a1473454072382"><p>A/B Testing</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454072734" name="186738" id="a1473454072734">
+        <label for="a1473454072734"><p>Non-Predictive</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Time Based
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Congrats</p></h3>
+  <div>
+  <h2 id="guess-what">Guess what?</h2>
+<h3 id="font-colorredthese-problems-were-taken-directly-from-later-courses-in-the-predictive-analytics-for-business-nanodegree-program-font"><font color="red">These problems were taken directly from later courses in the Predictive Analytics for Business Nanodegree Program! </font></h3>
+<p>Great work! You've taken important first steps towards being able to produce useful results and recommendations for problems like the ones above. </p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="13. Lesson Summary.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.4.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. Model Selection Assessment ')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

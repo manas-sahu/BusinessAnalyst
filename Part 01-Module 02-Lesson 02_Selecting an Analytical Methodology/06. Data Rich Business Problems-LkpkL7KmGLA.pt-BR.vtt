@@ -1,0 +1,68 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.133 --> 00:00:03.533
+Supondo que temos dados suficientes
+para começar a análise,
+
+00:00:03.567 --> 00:00:06.533
+a próxima decisão é observar
+o resultado que queremos prever
+
+00:00:06.566 --> 00:00:10.567
+e determinar se ele é um resultado
+numérico ou não numérico.
+
+00:00:11.167 --> 00:00:14.700
+Resultados numéricos são aqueles
+em que o resultado é só um número.
+
+00:00:14.733 --> 00:00:17.667
+Prever a demanda de energia
+ou a temperatura a cada hora
+
+00:00:17.700 --> 00:00:20.000
+são ambos
+resultados numéricos.
+
+00:00:20.033 --> 00:00:22.632
+Resultados não numéricos são
+aqueles em que queremos prever
+
+00:00:22.665 --> 00:00:26.233
+a categoria em que aquele caso
+ou cliente se encaixa.
+
+00:00:26.267 --> 00:00:29.199
+Por exemplo, se um cliente vai
+pagar no prazo, atrasado
+
+00:00:29.232 --> 00:00:31.037
+ou deixar
+de fazer um pagamento.
+
+00:00:31.567 --> 00:00:33.500
+Outro exemplo é calcular
+
+00:00:33.533 --> 00:00:36.833
+se um eletrônico vai quebrar
+antes de mil horas de uso.
+
+00:00:37.233 --> 00:00:40.667
+Normalmente chamamos os modelos
+que têm resultados não numéricos
+
+00:00:40.700 --> 00:00:42.800
+de "modelos de classificação".
+
+00:00:42.833 --> 00:00:46.600
+Os que preveem resultados numéricos
+são "modelos de regressão".
+
+00:00:47.333 --> 00:00:48.633
+*END*
+
+00:00:48.667 --> 00:00:49.967
+*CODE*
+

@@ -1,0 +1,104 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.334 --> 00:00:04.204
+O framework analítico de resolução
+de problemas que acabei de descrever
+
+00:00:04.238 --> 00:00:07.941
+vai nos ajudar a sistematicamente
+analisar um problema de negócio.
+
+00:00:07.975 --> 00:00:11.979
+No entanto, ele não vai nos ajudar
+a saber que metodologia vamos usar.
+
+00:00:12.613 --> 00:00:16.850
+Para determinar a metodologia, vamos
+usar este fluxograma como referência
+
+00:00:16.884 --> 00:00:19.920
+e chamá-lo
+de "mapa metodológico".
+
+00:00:20.220 --> 00:00:22.656
+O mapa metodológico vai nos ajudar
+a escolher o problema
+
+00:00:22.689 --> 00:00:25.158
+que será utilizado
+como problema de negócio
+
+00:00:25.192 --> 00:00:27.327
+e deve ser usado à medida
+que avançamos
+
+00:00:27.361 --> 00:00:29.630
+no framework analítico
+de resolução de problemas
+
+00:00:29.663 --> 00:00:31.932
+fornecido na aula anterior.
+
+00:00:31.965 --> 00:00:34.434
+Vamos começar
+na parte de cima do fluxograma.
+
+00:00:34.635 --> 00:00:37.538
+O 1º passo é determinar
+se o problema de negócio
+
+00:00:37.571 --> 00:00:40.541
+exige a previsão
+de um resultado ou não.
+
+00:00:40.574 --> 00:00:44.178
+Ter uma compreensão ampla
+sobre a questão e os dados
+
+00:00:44.211 --> 00:00:47.214
+vai nos ajudar a responder
+essa pergunta facilmente.
+
+00:00:47.414 --> 00:00:50.551
+Mais cedo, falamos sobre um cenário
+em que precisávamos prever
+
+00:00:50.584 --> 00:00:52.953
+a capacidade de fornecimento
+de energia.
+
+00:00:52.986 --> 00:00:55.255
+Depois de analisar
+o problema de negócio,
+
+00:00:55.289 --> 00:01:00.127
+vimos que também precisávamos prever
+a temperatura de cada hora do dia.
+
+00:01:00.160 --> 00:01:03.764
+Para este problema, vamos seguir
+o caminho da esquerda.
+
+00:01:03.797 --> 00:01:07.000
+Para muitos problemas, metodologias
+básicas de análise de dados
+
+00:01:07.034 --> 00:01:09.937
+serão suficientes.
+Para esse tipo de análise,
+
+00:01:09.970 --> 00:01:12.439
+seguimos o caminho da direita.
+
+00:01:12.639 --> 00:01:16.274
+Primeiro, vamos resumir alguns tipos
+de análises de dados não preditivas.
+
+00:01:16.307 --> 00:01:17.477
+*END*
+
+00:01:17.510 --> 00:01:18.779
+*CODE*
+

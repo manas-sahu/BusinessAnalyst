@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:05.200
+Por fim, vamos falar sobre conceitos
+básicos de estatística descritiva.
+
+00:00:05.233 --> 00:00:07.867
+Resumindo, a estatística descritiva
+oferece
+
+00:00:07.900 --> 00:00:10.500
+resumos simples
+das amostras de dados.
+
+00:00:10.533 --> 00:00:13.167
+Um exemplo é o cálculo
+da média das notas
+
+00:00:13.200 --> 00:00:14.900
+de candidatos a uma escola
+
+00:00:14.933 --> 00:00:18.439
+ou o cálculo da média de rebatidas
+de um jogador profissional.
+
+00:00:19.267 --> 00:00:21.500
+No exemplo
+do fornecimento de energia,
+
+00:00:21.533 --> 00:00:23.199
+poderíamos usar
+a estatística descritiva
+
+00:00:23.232 --> 00:00:27.867
+para calcular a temperatura média
+por hora por dia ou por data.
+
+00:00:27.900 --> 00:00:30.232
+Algumas das medidas mais comuns
+da estatística descritiva
+
+00:00:30.265 --> 00:00:35.406
+são a mediana, a média, a moda,
+o desvio padrão e os quartis.
+
+00:00:36.200 --> 00:00:40.000
+A Udacity tem um curso inteiramente
+dedicado à estatística descritiva,
+
+00:00:40.033 --> 00:00:44.167
+que você deve assistir, caso não
+conheça esses termos e conceitos.
+
+00:00:44.667 --> 00:00:45.967
+*END*
+
+00:00:46.000 --> 00:00:47.300
+*CODE*
+

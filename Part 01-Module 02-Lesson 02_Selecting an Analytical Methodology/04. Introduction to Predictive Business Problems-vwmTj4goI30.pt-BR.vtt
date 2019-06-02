@@ -1,0 +1,77 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.501 --> 00:00:03.370
+Agora que já falamos sobre
+análises de dados não preditivas,
+
+00:00:03.403 --> 00:00:07.508
+vamos trocar de marcha
+e falar de metodologias preditivas.
+
+00:00:08.242 --> 00:00:12.746
+O 1º passo é analisar os dados
+que temos para resolver o problema.
+
+00:00:13.413 --> 00:00:16.517
+Isso vai nos levar
+a dois possíveis resultados:
+
+00:00:16.550 --> 00:00:18.952
+podemos ter dados suficientes
+para solucionar um problema,
+
+00:00:18.986 --> 00:00:21.121
+o que vamos classificar
+como "rico em dados",
+
+00:00:21.154 --> 00:00:23.524
+ou não ter dados suficientes
+para resolver o problema,
+
+00:00:23.557 --> 00:00:26.126
+o que vamos classificar
+como "pobre em dados".
+
+00:00:26.159 --> 00:00:27.961
+Existe um jeito muito simples
+de determinar
+
+00:00:27.995 --> 00:00:30.564
+se você é rico em dados
+ou pobre em dados.
+
+00:00:30.597 --> 00:00:31.765
+Pode perguntar a si mesmo:
+
+00:00:31.798 --> 00:00:34.668
+"Eu tenho dados sobre o assunto
+que estou tentando prever?"
+
+00:00:34.701 --> 00:00:37.604
+Se tiver, você pode seguir
+o caminho rico em dados.
+
+00:00:37.638 --> 00:00:41.408
+Senão, o caminho pobre em dados
+é sua única opção.
+
+00:00:41.441 --> 00:00:43.110
+O que pode
+não ficar claro de início
+
+00:00:43.143 --> 00:00:46.280
+é se você tem dados sobre o assunto
+que está tentando prever.
+
+00:00:46.680 --> 00:00:49.750
+Vamos usar um exemplo para
+ilustrar e esclarecer o conceito.
+
+00:00:50.350 --> 00:00:51.618
+*END*
+
+00:00:51.652 --> 00:00:52.953
+*CODE*
+

@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:03.867
+O próximo tipo de análise
+que vamos discutir é a agregação.
+
+00:00:03.900 --> 00:00:08.067
+Esse método simplesmente calcula
+o valor em um grupo ou dimensão
+
+00:00:08.100 --> 00:00:10.967
+e é muito usado
+na análise de dados.
+
+00:00:11.000 --> 00:00:14.167
+Por exemplo, podemos agregar
+dados sobre as vendas
+
+00:00:14.200 --> 00:00:18.967
+de um vendedor por mês, somando
+os valores de suas vendas mensais.
+
+00:00:19.000 --> 00:00:22.067
+Então talvez você queira agregar
+esses valores através de dimensões,
+
+00:00:22.100 --> 00:00:25.133
+como as vendas mensais
+por região.
+
+00:00:25.167 --> 00:00:29.400
+Neste exemplo, você pode calcular
+as vendas mensais de cada vendedor
+
+00:00:29.433 --> 00:00:33.967
+e depois somar as vendas mensais
+de todos os vendedores da região.
+
+00:00:34.600 --> 00:00:36.733
+A agregação costuma ser usada
+
+00:00:36.767 --> 00:00:39.167
+quando é necessário separar
+e analisar as informações
+
+00:00:39.200 --> 00:00:42.167
+e ajudar gerentes a tomarem decisões
+e analisarem o desempenho.
+
+00:00:42.200 --> 00:00:44.100
+Por exemplo, você pode
+começar uma análise
+
+00:00:44.133 --> 00:00:46.933
+com o valor total
+de vendas de um ano.
+
+00:00:46.966 --> 00:00:49.100
+Você pode dividir isso
+em vendas por trimestre
+
+00:00:49.133 --> 00:00:53.067
+e, depois, especificar uma região
+ou um vendedor em particular.
+
+00:00:53.667 --> 00:00:54.967
+*END*
+
+00:00:55.000 --> 00:00:56.300
+*CODE*
+
