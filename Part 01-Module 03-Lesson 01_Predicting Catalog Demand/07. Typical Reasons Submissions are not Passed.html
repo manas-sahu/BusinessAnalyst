@@ -1,0 +1,260 @@
+<!-- udacimak v1.4.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Typical Reasons Submissions are not Passed</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Predicting Catalog Demand</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Introducing the Project.html">01. Introducing the Project</a>
+    </li>
+    <li class="">
+      <a href="02. Project Overview.html">02. Project Overview</a>
+    </li>
+    <li class="">
+      <a href="03. Project Details.html">03. Project Details</a>
+    </li>
+    <li class="">
+      <a href="04. Supporting Materials.html">04. Supporting Materials</a>
+    </li>
+    <li class="">
+      <a href="05. Tips.html">05. Tips</a>
+    </li>
+    <li class="">
+      <a href="06. Verify Answers for Project.html">06. Verify Answers for Project</a>
+    </li>
+    <li class="">
+      <a href="07. Typical Reasons Submissions are not Passed.html">07. Typical Reasons Submissions are not Passed</a>
+    </li>
+    <li class="">
+      <a href="08. Rubric Help.html">08. Rubric Help</a>
+    </li>
+    <li class="">
+      <a href="Project Description - Predicting Catalog Demand.html">Project Description - Predicting Catalog Demand</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - Predicting Catalog Demand.html">Project Rubric - Predicting Catalog Demand</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">07. Typical Reasons Submissions are not Passed</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Rubric: <a href="https://review.udacity.com/#!/rubrics/186/view" target="_blank">https://review.udacity.com/#!/rubrics/186/view</a></p>
+<p>This is a list of the most commonly missed rubric items and suggestions as to how to pass them.</p>
+<p>Rubric Item<br />
+All following questions have been answered:<br />
+What decisions need to be made?<br />
+What data is needed to inform those decisions?</p>
+<p>Suggestions:<br />
+When you are thinking about what decisions need to be made and what data is needed consider the following:<br />
+What is the company ultimately trying to make a decision on? <br />
+What is the criteria that will let them know what they should decide?<br />
+How will we predict the potential profit of sending out the catalog?<br />
+Considering the data we have, what pieces of it may be useful in coming up with this prediction?</p>
+<p>-</p>
+<p>Rubric item:<br />
+Each predictor variable is shown to have a linear relationship between the target variable whenever appropriate.<br />
+Each predictor variable should be significant (p-value &lt;= 0.05)</p>
+<p>Suggestions:</p>
+<p>For Numeric variables we can use scatterplots between an individual variable and the target variable to see if a variable might be a good candidate for a predictor variable. Here is how to do that in Alteryx. If the relationship is not linear it most likely is not a good candidate</p>
+<p>[pic linear scatterplot][pic non linear scatterplot]<br />
+good candidate                  bad candidate</p>
+<p>A linear relationship indicates that as the X increase the Y increase or decreases indicating the two variables are related. In a non linear relationship when X increase Y does not generally move in either direction showing no relation to each other.</p>
+<p>For categorical variables you will have to use trial and error to see if they are statistically significant. You can do this by including one in your model running it and checking your P value.<br />
+We are looking for low P-values check the report here:[   ] If one of the categories has is statistically significant it is a good variable to consider for your model.<br />
+Explain notation<br />
+Talk about asterisks</p>
+<p>-<br />
+Rubric Item:<br />
+p-values and R-squared values are used to justify how well the linear model works.</p>
+<p>Suggestions:<br />
+[LINEAR REGRESSION REPORT IMAGE]<br />
+The P values and R squared value are circled in red above</p>
+<p>Low P-values and a high R-squared suggest the model is highly predictive, Low P-values means it is highly unlikely that the two variables are not related. Low R squared means the model is not very fit. Some additional reading here:</p>
+<p><a href="http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-a-regression-model-with-low-r-squared-and-low-p-values" target="_blank">http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-a-regression-model-with-low-r-squared-and-low-p-values</a><br />
+<a href="http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients" target="_blank">http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients</a></p>
+<p>-</p>
+<p>Rubric Item:<br />
+The regression equation given is correct. Each coefficient should have up to 2 digits after the decimal figures (ex: 1.28).</p>
+<p>Suggestions:<br />
+The regression equation is built from the R output of the Linear Regression tool<br />
+You use the coefficient estimates and variable names to create the equation.</p>
+<p>[EXAMPLE]<br />
+I have highlighted the Coefficient Estimate and the variable name</p>
+<p>Target variable = intercept + coefficient(predictor variable) + coefficient(If category 1) + coefficient(If category 2)</p>
+<p>Target variable = intercept + coefficient(predictor variable) + coefficient(If category 1) + coefficient(If category 2)</p>
+<p>Fill it out for a given row of data</p>
+<p>This is what the score tool will do for all the data you are passing in where you do not have the target variable. It will create a prediction for what the target variable is based on the formula</p>
+<p>-</p>
+<p>Rubric Item:<br />
+All questions have been answered and the recommendations are well justified.<br />
+What is your recommendation?<br />
+How did you come up with your recommendation?<br />
+What is the expected profit from the new catalog (assuming the catalog is sent to these 250 customers)?</p>
+<p>Suggestions:<br />
+You should summarize all the steps you went through and explain how you factored in all the costs that were required.</p>
+<p>-</p>
+<p>Rubric Item:<br />
+The profit calculation is correct.</p>
+<p>The Final Profit should be between 20,000 and 25,000 If you are not in this range please review for the following: You should have picked 2 statistically significant predictor variables, there should be a numeric and a categorical predictor variable.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>If you were unsure about the first two check list items, you should review the Linear Regression with Categorical Variables lesson</p>
+<ul>
+<li>Forums: <a href="https://knowledge.udacity.com" target="_blank">https://knowledge.udacity.com</a></li>
+<li>Study Groups</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="08. Rubric Help.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.4.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('07. Typical Reasons Submissions are not Passed')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

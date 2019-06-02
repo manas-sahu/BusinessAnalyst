@@ -1,0 +1,217 @@
+<!-- udacimak v1.4.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project Details</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Predicting Catalog Demand</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Introducing the Project.html">01. Introducing the Project</a>
+    </li>
+    <li class="">
+      <a href="02. Project Overview.html">02. Project Overview</a>
+    </li>
+    <li class="">
+      <a href="03. Project Details.html">03. Project Details</a>
+    </li>
+    <li class="">
+      <a href="04. Supporting Materials.html">04. Supporting Materials</a>
+    </li>
+    <li class="">
+      <a href="05. Tips.html">05. Tips</a>
+    </li>
+    <li class="">
+      <a href="06. Verify Answers for Project.html">06. Verify Answers for Project</a>
+    </li>
+    <li class="">
+      <a href="07. Typical Reasons Submissions are not Passed.html">07. Typical Reasons Submissions are not Passed</a>
+    </li>
+    <li class="">
+      <a href="08. Rubric Help.html">08. Rubric Help</a>
+    </li>
+    <li class="">
+      <a href="Project Description - Predicting Catalog Demand.html">Project Description - Predicting Catalog Demand</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - Predicting Catalog Demand.html">Project Rubric - Predicting Catalog Demand</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">03. Project Details</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>Project Details</p></h3>
+  <div>
+  <h2 id="the-business-problem">The Business Problem</h2>
+<p>You recently started working for a company that manufactures and sells high-end home goods.  Last year the company sent out its first print catalog, and is preparing to send out this year's catalog in the coming months. The company has 250 new customers from their mailing list that they want to send the catalog to.</p>
+<p>Your manager has been asked to determine how much profit the company can expect from sending a catalog to these customers. You, the business analyst, are assigned to help your manager run the numbers. While fairly knowledgeable about data analysis, your manager is not very familiar with predictive models. </p>
+<p>You’ve been asked to predict the expected profit from these 250 new customers. Management does not want to send the catalog out to these new customers unless the expected profit contribution exceeds $10,000.</p>
+<h2 id="details">Details</h2>
+<ul>
+<li>The costs of printing and distributing is $6.50 per catalog. </li>
+<li>The average gross margin (price - cost) on all products sold through the catalog is 50%.</li>
+<li>Make sure to multiply your revenue by the gross margin first before you subtract out the $6.50 cost when calculating your profit.</li>
+</ul>
+<p>Write a short report with your recommendations outlining your reasons why the company should go with your recommendations to your manager.</p>
+<h3>Steps to Success</h3>
+<h4>Step 1: Business and Data Understanding</h4>
+<p>Your project should include:</p>
+<ul>
+<li>A description of the key business decisions that need to be made.  </li>
+</ul>
+<p><strong>Note:</strong> Clean data is provided for this project, so you can skip the data preparation step of the Problem Solving Framework.</p>
+<h4>Step 2: Analysis, Modeling, and Validation</h4>
+<p>Build a linear regression model, then use it to predict sales for the 250 customers. We encourage you to use Alteryx to build the best linear model with your data. </p>
+<p><strong>Note</strong>: For students using software other than Alteryx, if you decide to use Customer Segment as one of your predictor variables, please set the base case to Credit Card Only.</p>
+<p>However, feel free to use any tool you’d like. You should create your linear regression model and come up with a linear regression equation.</p>
+<p>Once you have your linear regression equation, you should use your linear regression equation to predict sales for the individual people in your mailing list. </p>
+<h4>Step 3: Writeup</h4>
+<p>Once you have your predicted or expected profit, write a brief report with your recommendation to whether the company should send the catalog or not.</p>
+<p><strong>Hint:</strong> We want to calculate the expected revenue from these 250 people in order to get expected profit. This means we need to multiply the probability that a person will buy our catalog as well. For example, if a customer were to buy from us, we predict this customer will buy $450 worth of products. At a 30% chance that this person will actually buy from us, we can expect revenue to be $450 x 30% = $135.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="04. Supporting Materials.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.4.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Project Details')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

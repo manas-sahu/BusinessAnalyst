@@ -1,0 +1,373 @@
+<!-- udacimak v1.4.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rubric Help</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Predicting Catalog Demand</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Introducing the Project.html">01. Introducing the Project</a>
+    </li>
+    <li class="">
+      <a href="02. Project Overview.html">02. Project Overview</a>
+    </li>
+    <li class="">
+      <a href="03. Project Details.html">03. Project Details</a>
+    </li>
+    <li class="">
+      <a href="04. Supporting Materials.html">04. Supporting Materials</a>
+    </li>
+    <li class="">
+      <a href="05. Tips.html">05. Tips</a>
+    </li>
+    <li class="">
+      <a href="06. Verify Answers for Project.html">06. Verify Answers for Project</a>
+    </li>
+    <li class="">
+      <a href="07. Typical Reasons Submissions are not Passed.html">07. Typical Reasons Submissions are not Passed</a>
+    </li>
+    <li class="">
+      <a href="08. Rubric Help.html">08. Rubric Help</a>
+    </li>
+    <li class="">
+      <a href="Project Description - Predicting Catalog Demand.html">Project Description - Predicting Catalog Demand</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - Predicting Catalog Demand.html">Project Rubric - Predicting Catalog Demand</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">08. Rubric Help</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Every project has a rubric that your submission will be graded against by our reviewers. Here is the rubric for this project: <a href="https://review.udacity.com/#!/rubrics/186/view" target="_blank">https://review.udacity.com/#!/rubrics/186/view</a></p>
+<p>We have noticed some areas where students are making similar mistakes and wanted to address some of the most commonly missed rubric items and give suggestions about how to how to pass them. All the data and graphs in these suggestions is different data than what is in the actual project.</p>
+<h3 id="rubric-item">Rubric Item</h3>
+<p>All following questions have been answered:</p>
+<ul>
+<li>What decisions need to be made?</li>
+<li>What data is needed to inform those decisions?</li>
+</ul>
+<h3 id="suggestions">Suggestions:</h3>
+<p>When you are thinking about what decisions need to be made and what data is needed consider the following:</p>
+<ul>
+<li>What is the company ultimately trying to make a decision on? </li>
+<li>What is the criteria that will let them know what they should decide?</li>
+<li>How will we predict the potential profit of sending out the catalog?</li>
+<li>Considering the data we have, what pieces of it may be useful in coming up with this prediction?</li>
+</ul>
+<h3 id="rubric-item-1">Rubric item:</h3>
+<ul>
+<li>Each predictor variable is shown to have a linear relationship between the target variable whenever appropriate.</li>
+<li>Each predictor variable should be significant (p-value &lt;= 0.05)</li>
+</ul>
+<h3 id="suggestions-1">Suggestions:</h3>
+<p>For Numeric variables we can use scatterplots between an individual variable and the target variable to see if a variable might be a good candidate for a predictor variable. Alteryx has a built in Scatterplot Tool you can use to do this. Put your target variable as your Y and a numeric predictor variable as X.</p>
+<p><strong>You must do this for all numeric variables</strong></p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/scatterplot-positive.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/scatterplot-negative.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/scatterplot-nothing.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>A sloped line in a scatter plot indicates that as the X increases or decreases the Y increase or decreases indicating the two variables are related. So if there is a slope to the line then this might indicate that this is a good predictor variable for this target variable. The first two graphs above would indicate the X variable (the potential predictor variable) would be a good candidate to be a predictor variable for the target variable. The last scatter plot graph shows an example of no slope and therefore there is no relationship between the predictor and target variable</p>
+<p>For categorical variables you will have to use trial and error to see which are statistically significant. You can do this by including one in your model running it and checking your P value for the categorical variable. </p>
+<p>I have included a screenshot from the R out put of the Linear Regression tool in Alteryx which is the Linear Regression Report below to illustrate where to check for these values.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/p-value.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>We are looking for P-values less than 0.05 None of the categorical variables here have Pvalue that low so we would remove it and try another categorical variable. As you can see categorical variables are broken down into their individual categories in the linear regression report. If one of the individual categories is statistically significant it is a good categorical variable to consider for your model.</p>
+<p>You may see a P-value that has a value that looks something like &lt; 2.2e-16 this can be written as 2.2 * 10^-16 which can also be written as &lt; .00000000000000022 This is very small! This would be a very significant variable for your model.</p>
+<p>A shortcut to determining if the p value is statistically significant is to look out to the right of it for the Significance codes. Basically if you see one or more asterisks it is statistically significant</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="rubric-item">Rubric Item:</h3>
+<p>p-values and R-squared values are used to justify how well the linear model works.</p>
+<h4 id="suggestions">Suggestions:</h4>
+<p>The P values and R squared values are circled in red below in the screenshot from the Report of the Linear Regression tool in Alteryx.</p>
+<p>Low P-values and a high R-squared suggest the model is highly predictive, Low P-values means it is highly unlikely that the two variables are not related. Low R squared means the model is not very fit. Some additional reading here:</p>
+<p><a href="http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-a-regression-model-with-low-r-squared-and-low-p-values" target="_blank">http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-a-regression-model-with-low-r-squared-and-low-p-values</a><br />
+<a href="http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients" target="_blank">http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-interpret-regression-analysis-results-p-values-and-coefficients</a></p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/p-value-r-squared.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="rubric-item">Rubric Item:</h3>
+<p>The regression equation given is correct. Each coefficient should have up to 2 digits after the decimal figures (ex: 1.28).</p>
+<h3 id="suggestions">Suggestions:</h3>
+<p>The regression equation is built from the R output of the Linear Regression tool.<br />
+You use the coefficient estimates and variable names to create the regression equation.</p>
+<p>I have highlighted the Coefficient Estimates in the screenshot below to show you where you will get the values to plug into the formula.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/estimate.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Here is the equation with our variables in place but before we have plugged in the coefficient estimates:</p>
+<p>Target variable = intercept + coefficient * (predictorpositive) + coefficient * (If red) + coefficient * (If yellow)</p>
+<p>Here is the equation after we have plugged in the coefficient estimates:</p>
+<p><strong>Target variable = 3.917+ 0.470 * (predictorpositive) + -3.484 * (If red) + -1.424 * (If yellow)</strong></p>
+<p>^^^This is the type of equation we are looking for in the report^^^</p>
+<h4 id="side-note">Side note:</h4>
+<p>The score tool takes the formula with the coefficient estimates and applies it to each row of data you pass in. So for example if the first row of the data you are applying this formula to has a 10 in the predictor positive column and has yellow in the categorical variable column then the score tool will plug those values into the formula to predict the target variable</p>
+<p>Target variable = 3.917+ 0.470 * (10) + -3.484 * (0) + -1.424 * (1)</p>
+<p>Target variable = 3.917 + 4.70 + 0 -1.424</p>
+<p>Target variable = 7.193</p>
+<p>This is what the score tool will do for each row of data you are passing in. It will create a prediction for what the target variable is based on the formula and the variable values for that row.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="rubric-item">Rubric Item:</h3>
+<p>All questions have been answered and the recommendations are well justified.<br />
+What is your recommendation?<br />
+How did you come up with your recommendation?<br />
+What is the expected profit from the new catalog (assuming the catalog is sent to these 250 customers)?</p>
+<h3 id="suggestions">Suggestions:</h3>
+<p>You should summarize all the steps you went through and explain how you factored in all the costs that were required in determining the predicted profit.</p>
+<h3 id="rubric-item-1">Rubric Item:</h3>
+<p>The profit calculation is correct.</p>
+<h3 id="suggestions-1">Suggestions:</h3>
+<p>The Final Profit should be between 20,000 and 25,000 If you are not in this range please review for the following: </p>
+<ul>
+<li>You should have picked 2 statistically significant predictor variables.</li>
+<li>There should be one numeric predictor variable and one categorical predictor variable.</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.4.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. Rubric Help')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
