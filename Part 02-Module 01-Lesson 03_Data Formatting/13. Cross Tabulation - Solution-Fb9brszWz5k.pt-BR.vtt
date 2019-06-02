@@ -1,0 +1,87 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:03.567
+Para solucionar o problema,
+só precisamos usar uma ferramenta
+
+00:00:03.600 --> 00:00:06.733
+além da ferramenta
+"Input Data".
+
+00:00:06.766 --> 00:00:09.400
+Vamos simplesmente conectar
+a ferramenta "CrossTab"
+
+00:00:09.433 --> 00:00:11.242
+a "Input Data".
+
+00:00:12.166 --> 00:00:15.871
+O campo através
+do qual vamos agrupar é "City",
+
+00:00:16.532 --> 00:00:20.400
+pois os registros serão
+cada uma das cidades.
+
+00:00:21.300 --> 00:00:25.400
+O campo "New Column Headers"
+serão os tipos de escola,
+
+00:00:25.433 --> 00:00:30.433
+então vamos escolher
+"TypeDesc".
+
+00:00:31.400 --> 00:00:35.333
+O campo "Values in the Columns"
+serão "Enrollment"
+
+00:00:36.100 --> 00:00:38.733
+e, como queremos somar
+o número de matriculados
+
+00:00:38.767 --> 00:00:44.133
+por cidade e tipo de escola,
+vamos escolher "Sum" como o método.
+
+00:00:44.167 --> 00:00:46.067
+Quando ativarmos o workflow,
+
+00:00:48.067 --> 00:00:52.300
+poderemos ver que os tipos
+de escola estarão listados no topo:
+
+00:00:52.333 --> 00:00:57.033
+"Regular", "Educação Especial",
+"Vocacional", "Técnico" e "Outros".
+
+00:00:57.067 --> 00:00:59.767
+E as cidades serão
+os registros individuais,
+
+00:00:59.800 --> 00:01:04.433
+junto ao número de alunos
+matriculados por cidade e tipo.
+
+00:01:04.467 --> 00:01:08.267
+Se filtrarmos o campo "City"
+e procurarmos "Laramie",
+
+00:01:08.300 --> 00:01:11.633
+veremos que o número de alunos
+matriculados em Laramie
+
+00:01:11.667 --> 00:01:14.633
+em escolas vocacionais,
+técnicas ou outras
+
+00:01:14.666 --> 00:01:16.667
+é 141.
+
+00:01:16.700 --> 00:01:18.133
+*END*
+
+00:01:18.167 --> 00:01:19.400
+*CODE*
+

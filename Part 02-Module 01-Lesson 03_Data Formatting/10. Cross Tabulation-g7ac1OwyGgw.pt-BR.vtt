@@ -1,0 +1,87 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.375 --> 00:00:06.167
+Outra maneira de usar dados
+é através da tabulação cruzada.
+
+00:00:06.208 --> 00:00:09.542
+Uma tabela cruzada permite
+que você pegue dados de um campo
+
+00:00:09.583 --> 00:00:13.208
+e some outros dados
+aos valores presentes nele
+
+00:00:13.250 --> 00:00:15.458
+para criar uma matriz.
+
+00:00:15.500 --> 00:00:18.125
+Vamos ver onde
+podemos usar isto.
+
+00:00:18.167 --> 00:00:20.875
+Se eu tiver uma lista
+de escolas do Wyoming
+
+00:00:20.917 --> 00:00:24.250
+e estiver montando um conjunto
+de dados com o CEP delas,
+
+00:00:24.292 --> 00:00:26.792
+então vou ter que somar
+os dados das escolas
+
+00:00:26.833 --> 00:00:28.792
+com base no CEP.
+
+00:00:28.833 --> 00:00:31.625
+Posso fazer somas simples
+dos registros de escolas
+
+00:00:31.667 --> 00:00:37.333
+ou do número de matriculados
+ao agregar ou somar os campos "CEP".
+
+00:00:37.375 --> 00:00:40.667
+No entanto, se eu quiser
+criar novos campos
+
+00:00:40.708 --> 00:00:43.958
+para cada valor
+de nível de escolaridade,
+
+00:00:44.000 --> 00:00:47.083
+ou seja, para o campo "LevelDesc"
+mostrado aqui,
+
+00:00:47.125 --> 00:00:50.333
+e somar o número de registros
+presentes no conjunto de dados
+
+00:00:50.375 --> 00:00:53.208
+por CEP e para cada valor,
+
+00:00:53.250 --> 00:00:57.167
+como "Outros", "Ensino Médio"
+ou "Ensino Básico",
+
+00:00:57.208 --> 00:01:00.708
+então eu teria que criar
+uma tabulação cruzada dos dados.
+
+00:01:00.750 --> 00:01:03.500
+Esse tipo de ação pode ser
+feita de forma parecida
+
+00:01:03.542 --> 00:01:05.833
+em uma tabela dinâmica
+no Excel.
+
+00:01:05.866 --> 00:01:07.250
+*END*
+
+00:01:07.283 --> 00:01:08.583
+*CODE*
+

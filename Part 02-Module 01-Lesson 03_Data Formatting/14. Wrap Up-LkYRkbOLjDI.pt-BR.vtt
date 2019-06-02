@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.600 --> 00:00:04.033
+Nesta aula, falamos
+sobre transposição, agregação
+
+00:00:04.067 --> 00:00:06.300
+e tabulação cruzada de dados
+para formatá-los
+
+00:00:06.333 --> 00:00:09.333
+e deixá-los mais úteis
+para a análise.
+
+00:00:09.367 --> 00:00:11.900
+Estamos quase acabando.
+Mas, na verdade,
+
+00:00:11.933 --> 00:00:15.167
+nem sempre temos apenas
+um conjunto de dados para trabalhar.
+
+00:00:15.200 --> 00:00:18.400
+Normalmente, mesclamos
+dados de várias fontes.
+
+00:00:18.433 --> 00:00:20.567
+Então, agora, vamos explorar
+o próximo passo
+
+00:00:20.600 --> 00:00:22.600
+na construção dos conjuntos
+de dados analíticos
+
+00:00:22.633 --> 00:00:24.833
+através de técnicas
+de mesclagem de dados.
+
+00:00:24.866 --> 00:00:26.233
+*END*
+
+00:00:26.267 --> 00:00:27.567
+*CODE*
+

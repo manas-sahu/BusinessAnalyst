@@ -1,0 +1,122 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.530 --> 00:00:03.060
+Let's explore how to do this in Altrix.
+
+00:00:03.060 --> 00:00:06.610
+We're starting with daily sales data,
+that runs from January 1,
+
+00:00:06.610 --> 00:00:08.410
+2015 to December 31, 2015, and
+
+00:00:08.410 --> 00:00:14.150
+we want to aggregate the sales value for
+each month.
+
+00:00:14.150 --> 00:00:15.580
+When we look at the data,
+
+00:00:15.580 --> 00:00:20.750
+we can see that the date field is in
+a date format not a string format.
+
+00:00:20.750 --> 00:00:25.100
+This is important to recognize, because
+if we want to aggregate by month,
+
+00:00:25.100 --> 00:00:28.650
+then we need to create a new
+field that has the month in it,.
+
+00:00:28.650 --> 00:00:33.010
+Then we simply use the values in that
+new field, to group the data by.
+
+00:00:33.010 --> 00:00:37.380
+We can easily create a month
+field by using the formula tool.
+
+00:00:37.380 --> 00:00:39.750
+Make sure to change
+the type to a string.
+
+00:00:39.750 --> 00:00:43.287
+Go down to the functions,
+choose Date/Time, and
+
+00:00:43.287 --> 00:00:46.920
+we'll use the Date/Time format function.
+
+00:00:46.920 --> 00:00:53.087
+If we browse through the help,
+going to the Functions &amp;gt; Date/Time,
+
+00:00:53.087 --> 00:00:58.105
+we can find information
+around that Date/Time format,
+
+00:00:58.105 --> 00:01:02.388
+and find the format string
+that we need to pull out
+
+00:01:02.388 --> 00:01:06.491
+the three character
+month value which is %b.
+
+00:01:06.491 --> 00:01:09.768
+So going back to the workflow,
+
+00:01:09.768 --> 00:01:14.430
+where it says dt we put
+in the field date, and
+
+00:01:14.430 --> 00:01:20.250
+where it says f we replace
+this with "%b" in quotes.
+
+00:01:20.250 --> 00:01:24.800
+We can see the month value
+appearing in this field.
+
+00:01:24.800 --> 00:01:28.030
+Then we can add the summarize
+tool to aggregate the data
+
+00:01:28.030 --> 00:01:30.809
+to the new month field, and
+sum up the sales values.
+
+00:01:32.490 --> 00:01:37.520
+However, when we run this, we see that
+the data is sorted by month name, so
+
+00:01:37.520 --> 00:01:40.180
+the months don't appear
+in their calendar order.
+
+00:01:41.220 --> 00:01:44.510
+To fix this,
+we'll go back to the formula tool and
+
+00:01:44.510 --> 00:01:48.660
+add one more month field,
+that represents the month as a number.
+
+00:01:48.660 --> 00:01:51.120
+We'll use the same function again, but
+
+00:01:51.120 --> 00:01:56.270
+this time we'll use % lower case
+m to pull out the month number.
+
+00:01:56.270 --> 00:01:58.610
+When we add this to
+our summarize tool and
+
+00:01:58.610 --> 00:02:03.190
+move it to the top, the data will now
+be sorted in calendar month format.
+

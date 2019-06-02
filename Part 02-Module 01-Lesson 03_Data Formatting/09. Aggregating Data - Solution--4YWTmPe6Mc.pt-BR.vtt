@@ -1,0 +1,53 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:04.767
+Para encontrar o número total
+de alunos matriculados no CEP 82009,
+
+00:00:04.800 --> 00:00:07.833
+simplesmente vamos pegar
+a ferramenta "Summarize",
+
+00:00:07.867 --> 00:00:11.333
+selecionar o campo "Zip Code"
+para agrupar.
+
+00:00:11.367 --> 00:00:14.333
+Agora vamos selecionar
+o campo "Enrollment",
+
+00:00:14.367 --> 00:00:18.500
+vamos até "Add", selecionar
+"Sum" e ativar a planilha.
+
+00:00:19.767 --> 00:00:23.800
+Agora os números de matriculados
+foram todos somados por CEP.
+
+00:00:23.833 --> 00:00:28.733
+Então podemos filtrar
+os resultados do CEP 82009
+
+00:00:28.767 --> 00:00:33.267
+arrastando uma ferramenta "Filter"
+e criando uma consulta
+
+00:00:33.300 --> 00:00:38.200
+que diz
+"Zip Code Equals 82009".
+
+00:00:38.233 --> 00:00:43.633
+O resultado é o valor
+de 4.183 matriculados
+
+00:00:43.667 --> 00:00:46.800
+no CEP 82009.
+
+00:00:46.833 --> 00:00:48.167
+*END*
+
+00:00:48.200 --> 00:00:49.500
+*CODE*
+

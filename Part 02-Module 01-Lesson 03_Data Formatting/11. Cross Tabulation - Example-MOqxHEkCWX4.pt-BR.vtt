@@ -1,0 +1,155 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:02.367
+Vamos tentar fazer
+uma tabulação cruzada no Alteryx.
+
+00:00:02.400 --> 00:00:04.833
+Mas, antes de fazer isso,
+vamos contar as escolas
+
+00:00:04.867 --> 00:00:08.500
+por CEP e por nível de escolaridade
+para as quais seriam os números
+
+00:00:08.533 --> 00:00:10.767
+se usássemos
+a ferramenta "Summarize".
+
+00:00:10.800 --> 00:00:13.667
+Quando olhamos os resultados,
+vemos que os dados
+
+00:00:13.700 --> 00:00:19.667
+mostram o número de escolas
+por CEP e nível de escolaridade.
+
+00:00:19.700 --> 00:00:23.367
+Mas o que queremos fazer
+é criar novos campos
+
+00:00:23.400 --> 00:00:25.800
+a partir dos valores
+de nível de escolaridade
+
+00:00:25.833 --> 00:00:31.067
+para contar o número de escolas
+de cada categoria por CEP.
+
+00:00:31.100 --> 00:00:34.633
+Para fazer isso, vamos usar
+a ferramenta "CrossTab".
+
+00:00:34.667 --> 00:00:37.367
+Depois de conectá-la...
+
+00:00:37.400 --> 00:00:41.100
+Depois de conectá-la,
+vamos configurá-la.
+
+00:00:41.133 --> 00:00:43.133
+O campo
+"Group Data by These Values"
+
+00:00:43.167 --> 00:00:46.033
+representa os registros
+que queremos ver.
+
+00:00:46.067 --> 00:00:48.967
+Neste caso,
+são os "Zip Codes".
+
+00:00:49.000 --> 00:00:51.100
+O campo "New Column Headers"
+
+00:00:51.133 --> 00:00:54.067
+representa os campos
+que serão criados
+
+00:00:54.100 --> 00:00:57.467
+a partir dos valores
+presentes naquela coluna de dados.
+
+00:00:57.500 --> 00:01:01.400
+Como queremos um campo
+para cada nível de escolaridade,
+
+00:01:01.433 --> 00:01:04.733
+vamos selecionar
+"LevelDesc" aqui.
+
+00:01:04.767 --> 00:01:07.433
+Agora,
+em "Values for New Columns",
+
+00:01:07.467 --> 00:01:10.333
+temos que selecionar
+um campo numérico
+
+00:01:10.367 --> 00:01:13.933
+para que uma contagem seja
+gerada para cada registro.
+
+00:01:13.967 --> 00:01:15.900
+Vamos selecionar "Enrollment".
+
+00:01:15.933 --> 00:01:18.833
+Em
+"Method for Aggregating Values",
+
+00:01:18.867 --> 00:01:21.533
+vamos selecionar
+"Count without Nulls",
+
+00:01:21.567 --> 00:01:25.267
+que conta o número de registros
+sem os valores nulos.
+
+00:01:25.300 --> 00:01:27.933
+O resultado mostra as descrições
+do nível de escolaridade
+
+00:01:27.967 --> 00:01:32.467
+listadas no topo
+e os CEPs na lateral,
+
+00:01:32.500 --> 00:01:35.633
+junto à contagem de escolas
+
+00:01:35.667 --> 00:01:39.267
+que se encaixam
+em cada categoria.
+
+00:01:39.300 --> 00:01:42.333
+Podemos retirar
+a palavra "Count" facilmente
+
+00:01:42.367 --> 00:01:44.033
+com a ferramenta "Select".
+
+00:01:44.067 --> 00:01:48.400
+Vamos selecionar os campos dos
+quais queremos retirar a palavra,
+
+00:01:48.433 --> 00:01:51.533
+vamos até "Options",
+"Remove Prefix"
+
+00:01:51.567 --> 00:01:55.567
+e selecionar "Remove Count_".
+
+00:01:55.600 --> 00:01:57.233
+Quando ativarmos o workflow,
+
+00:01:57.267 --> 00:02:02.700
+vamos ver que a palavra
+foi retirada dos campos.
+
+00:02:02.733 --> 00:02:04.067
+*END*
+
+00:02:04.100 --> 00:02:05.400
+*CODE*
+

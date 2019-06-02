@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.450 --> 00:00:03.820
+To solve for this exercise,
+we transpose the data
+
+00:00:03.820 --> 00:00:07.990
+making sure to select both product and
+category as the key fields.
+
+00:00:09.000 --> 00:00:12.430
+And then all of the months
+become the data fields.
+
+00:00:12.430 --> 00:00:15.710
+To ensure that we're doing
+the summarization for January and
+
+00:00:15.710 --> 00:00:18.660
+February only,
+we attach a filter tool and
+
+00:00:18.660 --> 00:00:23.590
+filter out the records where the month
+is equal to either January or February.
+
+00:00:23.590 --> 00:00:28.000
+I can start building the expression
+by using the basic filter and
+
+00:00:28.000 --> 00:00:31.930
+then click on the custom filter
+to add in the second month.
+
+00:00:31.930 --> 00:00:34.497
+Feel free to use copy paste
+in the expression area.
+
+00:00:35.940 --> 00:00:38.160
+Next, we attach the summarize tool.
+
+00:00:38.160 --> 00:00:40.620
+We're going to group by both product and
+category.
+
+00:00:41.960 --> 00:00:45.124
+And then sum up the value field,
+which represents the sales.
+
+00:00:47.310 --> 00:00:51.350
+From here, we can see that the sales for
+encyclopedias for January and
+
+00:00:51.350 --> 00:00:55.635
+February combined is a 125,452.
+

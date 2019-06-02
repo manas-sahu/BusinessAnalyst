@@ -1,0 +1,62 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.934 --> 00:00:05.033
+Na última aula, aprendemos
+a identificar e limpar dados brutos
+
+00:00:05.067 --> 00:00:08.300
+para construirmos
+nosso conjunto de dados ótimo.
+
+00:00:08.334 --> 00:00:10.767
+No entanto, depois que os dados
+forem limpos,
+
+00:00:10.801 --> 00:00:12.734
+talvez eles não estejam
+corretamente formatados
+
+00:00:12.767 --> 00:00:14.934
+para serem usados
+na construção de modelos.
+
+00:00:15.367 --> 00:00:17.767
+Por exemplo, podemos querer
+construir um modelo
+
+00:00:17.801 --> 00:00:22.067
+para prever a venda de produtos
+por mês nos próximos 6 meses.
+
+00:00:22.100 --> 00:00:25.701
+Se os dados que tivermos disponíveis
+forem as vendas diárias de produtos,
+
+00:00:25.734 --> 00:00:30.000
+então vamos ter que somar
+as vendas diárias de cada mês.
+
+00:00:30.033 --> 00:00:32.834
+Esse é um exemplo
+de formatação de dados.
+
+00:00:32.868 --> 00:00:35.701
+Nesta aula, vamos falar
+sobre como identificar
+
+00:00:35.734 --> 00:00:38.634
+quando seus dados têm que ser
+formatados de maneira diferente
+
+00:00:38.667 --> 00:00:43.033
+e como massagear os dados
+ou agregá-los na forma exigida.
+
+00:00:43.066 --> 00:00:44.400
+*END*
+
+00:00:44.434 --> 00:00:45.734
+*CODE*
+

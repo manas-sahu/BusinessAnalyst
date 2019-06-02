@@ -1,0 +1,83 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.870 --> 00:00:03.810
+Let's look at how to
+transpose data in Alteryx.
+
+00:00:03.810 --> 00:00:05.469
+When we look at the data,
+
+00:00:05.469 --> 00:00:09.740
+we can see that sales are shown
+in six different fields by month.
+
+00:00:09.740 --> 00:00:14.780
+We're going to take these six fields,
+and put them all into one sales field.
+
+00:00:14.780 --> 00:00:19.660
+To do this, we drag in the transpose
+tool from the transform category.
+
+00:00:19.660 --> 00:00:23.580
+Notice how the tool image itself
+is showing you the before and
+
+00:00:23.580 --> 00:00:25.400
+after of the data.
+
+00:00:25.400 --> 00:00:29.013
+We're going to go from wide to long.
+
+00:00:29.013 --> 00:00:33.790
+The key field which is the field
+that is not going to be transposed,
+
+00:00:33.790 --> 00:00:35.422
+is the product field.
+
+00:00:35.422 --> 00:00:39.340
+While all the rest of the fields
+remain checked in the data fields.
+
+00:00:40.530 --> 00:00:45.820
+When we run the workflow, we can see
+that 3 records turn into 18 records.
+
+00:00:47.550 --> 00:00:49.260
+There were three records initially.
+
+00:00:49.260 --> 00:00:51.260
+With six fields of data.
+
+00:00:51.260 --> 00:00:56.550
+So when we transpose the data
+this becomes 18 records of data.
+
+00:00:56.550 --> 00:01:00.320
+Each initial record is now
+represented by six records.
+
+00:01:00.320 --> 00:01:02.060
+One for each month.
+
+00:01:02.060 --> 00:01:05.720
+So when we transpose the data,
+it creates two fields.
+
+00:01:05.720 --> 00:01:09.820
+One is name or the name of
+the field the data came from.
+
+00:01:09.820 --> 00:01:12.370
+And value, which is the sales value.
+
+00:01:13.910 --> 00:01:18.630
+We can use the select tool to change
+the field called value to sales.
+
+00:01:18.630 --> 00:01:20.420
+And then the field called name to date.
+

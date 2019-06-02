@@ -1,0 +1,71 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.333 --> 00:00:03.633
+Para resolver este exercício,
+temos que transpor os dados,
+
+00:00:03.667 --> 00:00:06.833
+lembrando de selecionar
+"Product" e "Category"
+
+00:00:06.867 --> 00:00:08.867
+como "Key Fields".
+
+00:00:08.900 --> 00:00:12.167
+Assim, todos os meses
+serão os "Data Fields".
+
+00:00:12.200 --> 00:00:16.833
+Para garantir que vamos fazer a soma
+apenas de janeiro e fevereiro,
+
+00:00:16.867 --> 00:00:18.532
+vamos associar
+uma ferramenta "Filter"
+
+00:00:18.565 --> 00:00:23.367
+e filtrar os registros em que o mês
+é igual a "January" ou "February".
+
+00:00:23.400 --> 00:00:27.700
+Posso começar a construir
+a expressão usando o "Basic Filter"
+
+00:00:27.733 --> 00:00:31.733
+e depois clicar no "Custom Filter"
+para acrescentar o 2º mês.
+
+00:00:31.767 --> 00:00:35.567
+Você pode copiar e colar
+na "Expression area".
+
+00:00:35.600 --> 00:00:38.000
+Agora vamos conectar
+a ferramenta "Summarize".
+
+00:00:38.033 --> 00:00:41.300
+Vamos "Group By"
+por "Product" e "Category"
+
+00:00:41.867 --> 00:00:45.576
+e somar o valor
+que representa as vendas.
+
+00:00:47.200 --> 00:00:50.400
+A partir disso, podemos ver
+que as vendas de enciclopédias
+
+00:00:50.433 --> 00:00:52.500
+de janeiro e fevereiro juntos
+
+00:00:52.533 --> 00:00:56.233
+é de 125.452.
+
+00:00:56.633 --> 00:00:57.933
+*END*
+
+00:00:58.175 --> 00:00:59.300
+*CODE*
+

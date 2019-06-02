@@ -1,0 +1,62 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.042 --> 00:00:03.625
+Agora é a sua vez de usar o Alteryx
+para agregar dados.
+
+00:00:03.667 --> 00:00:06.625
+Você vai trabalhar com uma lista
+de escolas do Wyoming.
+
+00:00:06.667 --> 00:00:11.250
+Para quem não conhece,
+o Wyoming é um estado dos EUA.
+
+00:00:11.292 --> 00:00:14.417
+É lá que fica o lindo
+Parque Nacional de Yellowstone,
+
+00:00:14.458 --> 00:00:17.417
+que é conhecido por um gêiser
+chamado Old Faithful,
+
+00:00:17.458 --> 00:00:20.583
+que entra em erupção
+em determinados intervalos.
+
+00:00:21.042 --> 00:00:23.583
+Agora que tem uma noção
+de onde fica o Wyoming,
+
+00:00:23.625 --> 00:00:25.792
+vamos voltar ao exercício.
+
+00:00:25.833 --> 00:00:28.250
+Pegue o arquivo
+"Wyoming School Sample",
+
+00:00:28.292 --> 00:00:30.292
+encontrado nas anotações
+abaixo do vídeo,
+
+00:00:30.333 --> 00:00:33.042
+"Summarize" os dados
+das escolas por CEP,
+
+00:00:33.083 --> 00:00:37.125
+"Count" o número total
+de matrículas de alunos por CEP
+
+00:00:37.167 --> 00:00:40.370
+e "Count" o número de escolas
+em cada CEP.
+
+00:00:41.833 --> 00:00:47.542
+Qual é o número total de matrículas
+de alunos no CEP 82009?
+
+00:00:47.875 --> 00:00:49.208
+*END*
+

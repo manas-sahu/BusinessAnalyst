@@ -1,0 +1,51 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.500 --> 00:00:02.967
+Mais cedo, disse que iríamos
+massagear os dados.
+
+00:00:03.000 --> 00:00:04.833
+Mas o que isso significa?
+
+00:00:04.867 --> 00:00:07.833
+Aqui está um conjunto de dados com
+os produtos listados na esquerda,
+
+00:00:07.867 --> 00:00:12.067
+como registros individuais,
+e meses na parte de cima.
+
+00:00:12.100 --> 00:00:14.900
+Em cada uma das células,
+estão as vendas de cada mês
+
+00:00:14.933 --> 00:00:16.900
+para cada produto.
+
+00:00:16.933 --> 00:00:20.867
+Mas e se precisássemos de todos
+os valores de venda num só campo?
+
+00:00:20.900 --> 00:00:23.867
+Teríamos que mudar
+a orientação dos dados
+
+00:00:23.900 --> 00:00:27.933
+para que todos os meses
+fossem exibidos numa coluna só.
+
+00:00:27.967 --> 00:00:29.900
+Isso se chama transposição,
+
+00:00:29.933 --> 00:00:34.700
+e o conceito é similar ao que
+fazemos na tabela dinâmica do Excel.
+
+00:00:34.733 --> 00:00:36.067
+*END*
+
+00:00:36.100 --> 00:00:37.400
+*CODE*
+

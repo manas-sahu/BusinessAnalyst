@@ -1,0 +1,101 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.734 --> 00:00:03.637
+Vamos ver como podemos
+transpor dados no Alteryx.
+
+00:00:03.670 --> 00:00:07.040
+Quando observamos os dados,
+vemos que as vendas são exibidas
+
+00:00:07.074 --> 00:00:09.710
+em 6 campos diferentes,
+por mês.
+
+00:00:09.743 --> 00:00:14.615
+Vamos pegar os 6 campos
+e colocá-los no mesmo campo.
+
+00:00:14.648 --> 00:00:17.384
+Para fazer isso, vamos pegar
+a ferramenta "Transpose"
+
+00:00:17.417 --> 00:00:19.453
+da categoria "Transform".
+
+00:00:19.486 --> 00:00:22.322
+Note que a própria imagem
+da ferramenta mostra
+
+00:00:22.356 --> 00:00:25.225
+o antes e o depois dos dados.
+
+00:00:25.259 --> 00:00:28.929
+Vamos passar de "wide"
+para "long".
+
+00:00:28.962 --> 00:00:33.734
+O campo "Key",
+que não vai ser transposto,
+
+00:00:33.767 --> 00:00:35.402
+é o campo "Product".
+
+00:00:35.435 --> 00:00:38.639
+Todos os campos restantes
+vão continuar marcados
+
+00:00:38.672 --> 00:00:40.440
+no campo "Data Fields".
+
+00:00:40.474 --> 00:00:44.645
+Quando ativar o workflow,
+vamos ver que 3 registros
+
+00:00:44.678 --> 00:00:47.381
+vão se tornar 18 registros.
+
+00:00:47.414 --> 00:00:51.084
+Havia 3 registros inicialmente,
+com 6 campos de dados.
+
+00:00:51.118 --> 00:00:56.290
+Então, quando transpusemos os dados,
+isso gerou 18 registros de dados.
+
+00:00:56.323 --> 00:01:00.160
+Cada registro inicial agora
+está representado por 6 registros:
+
+00:01:00.194 --> 00:01:03.764
+um para cada mês.
+Então, quando transpusemos os dados,
+
+00:01:03.797 --> 00:01:09.603
+criamos dois campos: "Name", o nome
+do campo de onde vieram os dados,
+
+00:01:09.636 --> 00:01:13.173
+e "Value", que é
+o valor das vendas.
+
+00:01:13.774 --> 00:01:16.476
+Podemos usar a ferramenta "Select"
+para mudar o nome
+
+00:01:16.509 --> 00:01:18.445
+do campo chamado "Value"
+para "Sales"
+
+00:01:18.478 --> 00:01:21.114
+e do campo chamado "Name"
+para "Date".
+
+00:01:21.147 --> 00:01:22.482
+*END*
+
+00:01:22.516 --> 00:01:23.817
+*CODE*
+

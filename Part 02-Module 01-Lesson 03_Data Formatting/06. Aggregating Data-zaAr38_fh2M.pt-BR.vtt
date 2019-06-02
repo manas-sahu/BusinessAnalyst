@@ -1,0 +1,72 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.375 --> 00:00:04.583
+Nesta seção, vamos aprender
+sobre agregação ou soma de dados.
+
+00:00:04.616 --> 00:00:07.958
+Por exemplo, você pode querer
+somar dados transacionais
+
+00:00:08.000 --> 00:00:11.333
+que listam cada produto vendido
+numa transação
+
+00:00:11.375 --> 00:00:13.833
+em registros separados.
+
+00:00:13.875 --> 00:00:17.625
+Se você quisesse calcular
+a venda total da transação,
+
+00:00:17.667 --> 00:00:21.375
+você teria que somar os produtos
+dentro de cada transação.
+
+00:00:21.417 --> 00:00:23.958
+Ou talvez você queira contar
+o número de tuítes
+
+00:00:24.000 --> 00:00:27.792
+associado a uma determinada loja
+em um mês específico.
+
+00:00:27.833 --> 00:00:31.208
+Então você teria que contar todos
+os tuítes dentro desse período.
+
+00:00:31.958 --> 00:00:35.792
+Se pensarmos no exemplo
+mencionado no início da aula,
+
+00:00:35.833 --> 00:00:39.625
+temos dados sobre vendas diárias
+e queremos criar um modelo preditivo
+
+00:00:39.667 --> 00:00:42.125
+para prever vendas mensais.
+
+00:00:42.167 --> 00:00:45.958
+Então os dados dentro do modelo
+terão que ser agregados
+
+00:00:45.991 --> 00:00:49.917
+para que cada registro
+represente um valor mensal.
+
+00:00:50.249 --> 00:00:53.583
+Se você fosse somar os dados
+por mês no Excel,
+
+00:00:53.625 --> 00:00:57.458
+teria que criar uma tabela dinâmica
+com os dados de vendas mensais.
+
+00:00:57.491 --> 00:00:58.958
+*END*
+
+00:00:58.991 --> 00:01:00.125
+*CODE*
+
