@@ -1,0 +1,339 @@
+<!-- udacimak v1.4.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Alteryx Tools</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Practice Project</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Practice Project Intro.html">01. Practice Project Intro</a>
+    </li>
+    <li class="">
+      <a href="02. New Alteryx Tools.html">02. New Alteryx Tools</a>
+    </li>
+    <li class="">
+      <a href="03. Practice Project Details.html">03. Practice Project Details</a>
+    </li>
+    <li class="">
+      <a href="04. Practice Project Solution.html">04. Practice Project Solution</a>
+    </li>
+    <li class="">
+      <a href="05. Solution Walkthrough.html">05. Solution Walkthrough</a>
+    </li>
+    <li class="">
+      <a href="06. Input and Visualize Data.html">06. Input and Visualize Data</a>
+    </li>
+    <li class="">
+      <a href="07. Build the Model.html">07. Build the Model</a>
+    </li>
+    <li class="">
+      <a href="08. Score the Model.html">08. Score the Model</a>
+    </li>
+    <li class="">
+      <a href="09. On to the Project!.html">09. On to the Project!</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">02. New Alteryx Tools</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="new-tools">New Tools</h1>
+<p>To help you complete the practice project and project 1, here is an introduction to a couple new tools.</p>
+<h3 id="score-tool">Score Tool</h3>
+<p>The Score tool is used to apply the results of a predictive model to a dataset. In project zero, you applied the results of a linear regression manually by using the linear regression equation. As you add more predictor variables, manual calculations can become more complicated. The Score tool makes this easy by automatically applying the linear regression equation from a Linear Regression tool.</p>
+<p>To use the Score tool, you connect the <em>O</em> (object) node of the Linear Regression tool to one of the input nodes of the Score tool. On the other node, you connect the data you are using to make a prediction. You must make sure that all the predictor variables used in the linear regression model are present in the input dataset used in the Score tool. Generally you can use the default configurations of the Score tool. To read more about it, you can go to the Alteryx Help page <a href="https://help.alteryx.com/9.5/Score.htm" target="_blank">here</a>.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/score-tool.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/score-tool.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>The second image above is from the latest version of Alteryx. The Score Tool now requires you to connect the O output of the model to the M input of the score tool and the data you will be applying the model to to the D input.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Once you run the workflow, the resulting dataset will be identical to the input dataset but with one additional field called Score or X. This field represents the predicted values for the target variable in the linear regression model. In the case of the practice project, it's diamond prices. In case of project one, it will be revenue. You can specify the field name the Score tool outputs by filling in the field indicated in the below screenshot of the configuration window of the Score tool.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/capture6.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="formula-tool">Formula Tool</h3>
+<p>The formula tool in Alteryx is similar to the formulas you would use in a spreadsheet application. You can use it to perform various operations on existing fields. For example, if you need to display units in thousands, you can select a field, and put in a formula to divide that field by 1000 for each record.</p>
+<p>To use a Formula, you first attach an input dataset. Then, you select from the configurations what record you'd like to use. Lastly, you build the formula. You can do this by either selecting the variables and expressions you'd like to use from the middle section(see below), or you can write the formula manually in the Expression section. Field names must be in brackets. See the example below (which also serves as a hint for how to use the Formula tool in the practice project).</p>
+<p>This tool can do a wide variety of things, and you'll learn much more about it in future lessons. To read more about the Formula tool, you can go to the Alteryx Help page: </p>
+<p><a href="https://help.alteryx.com/11.0/Reference/Functions.htm" target="_blank">https://help.alteryx.com/11.0/Reference/Functions.htm</a>.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/formula.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/formula-tool.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>The second image above shows what the configuration window looks like in the latest version of Alteryx. Notice the top left dropdown underneath Output Column. This field will initially say Select Column. You must click it and select an existing column or select the add column option to create a new one for the formula to output to.</p>
+<p>You will find existing fields to reference in your formula by click the X icon on the left. You will find the functions you can include in your formula by clicking the fx icon on the left.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>The 3 videos below will walk you through some typical errors you will run into with these tools and how to troubleshoot your Alteryx workflow.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="formula-tool-update">Formula Tool Update</h2>
+<p>Please reference this page to see how the formula tool has been updated: <a href="https://community.alteryx.com/t5/Alteryx-Knowledge-Base/Formula-Tool-Updates-Alteryx-11-0/ta-p/46482" target="_blank">https://community.alteryx.com/t5/Alteryx-Knowledge-Base/Formula-Tool-Updates-Alteryx-11-0/ta-p/46482</a></p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>4 Score Tool Errors1</p></h3>
+  <video controls>
+  <source src="02. 4 Score Tool Errors1-gqmpyzZi6FY.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="02. 4 Score Tool Errors1-gqmpyzZi6FY.en.vtt" label="en">
+  <track default="false" kind="subtitles" srclang="BR" src="02. 4 Score Tool Errors1-gqmpyzZi6FY.pt-BR.vtt" label="BR">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>3 Null Values</p></h3>
+  <video controls>
+  <source src="02. 3 Null Values-a64DlgUSvb0.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="02. 3 Null Values-a64DlgUSvb0.en.vtt" label="en">
+  <track default="false" kind="subtitles" srclang="BR" src="02. 3 Null Values-a64DlgUSvb0.pt-BR.vtt" label="BR">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>2 Formula Tool Errors1</p></h3>
+  <video controls>
+  <source src="02. 2 Formula Tool Errors1-pRaDUUZ6c_I.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="02. 2 Formula Tool Errors1-pRaDUUZ6c_I.en.vtt" label="en">
+  <track default="false" kind="subtitles" srclang="BR" src="02. 2 Formula Tool Errors1-pRaDUUZ6c_I.pt-BR.vtt" label="BR">
+</video>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="03. Practice Project Details.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.4.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. New Alteryx Tools')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!-- udacimak v1.4.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Practice Project Details</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Practice Project</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Practice Project Intro.html">01. Practice Project Intro</a>
+    </li>
+    <li class="">
+      <a href="02. New Alteryx Tools.html">02. New Alteryx Tools</a>
+    </li>
+    <li class="">
+      <a href="03. Practice Project Details.html">03. Practice Project Details</a>
+    </li>
+    <li class="">
+      <a href="04. Practice Project Solution.html">04. Practice Project Solution</a>
+    </li>
+    <li class="">
+      <a href="05. Solution Walkthrough.html">05. Solution Walkthrough</a>
+    </li>
+    <li class="">
+      <a href="06. Input and Visualize Data.html">06. Input and Visualize Data</a>
+    </li>
+    <li class="">
+      <a href="07. Build the Model.html">07. Build the Model</a>
+    </li>
+    <li class="">
+      <a href="08. Score the Model.html">08. Score the Model</a>
+    </li>
+    <li class="">
+      <a href="09. On to the Project!.html">09. On to the Project!</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">03. Practice Project Details</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>Practice Project</p></h3>
+  <div>
+  <h1 id="predicting-diamond-prices">Predicting Diamond Prices</h1>
+<h3 id="project-overview">Project Overview</h3>
+<p>A jewelry company wants to put in a bid to purchase a large set of diamonds, but is unsure how much it should bid. In this project, you will use the results from a predictive model to make a recommendation on how much the jewelry company should bid for the diamonds. </p>
+<h3 id="project-details">Project Details</h3>
+<p>A diamond distributor has recently decided to exit the market and has put up a set of 3,000 diamonds up for auction. Seeing this as a great opportunity to expand its inventory, a jewelry company has shown interest in making a bid. To decide how much to bid, you will use a large database of diamond prices to build a model to predict the price of a diamond based on its attributes. Then you will use the results of that model to make a recommendation for how much the company should bid.</p>
+<p><strong>Step 1 – Understand the data:</strong> There are two datasets. <em>diamonds.csv</em> contains the data used to build the regression model. <em>new_diamonds_new.csv</em> contains the data for the diamonds the company would like to purchase. Both datasets contain carat, cut, and clarity data for each diamond. Only the <em>diamonds.csv</em> dataset has prices. You'll be predicting prices for the <em>new_diamonds.csv</em> dataset.</p>
+<ul>
+<li><em>Carat</em> represents the weight of the diamond, and is a numerical variable. </li>
+<li><em>Cut</em> represents the quality of the cut of the diamond, and falls into 5 categories: fair, good, very good, ideal, and premium. In project zero, these categories were represented by an ordinal variable, 1-5. You can decide to use the ordinal or categorical variable.</li>
+<li><em>Clarity</em> represents the internal purity of the diamond, and falls into 8 categories: I1, SI2, SI1, VS2, VS1, VVS2, VVS1, and IF (in order from least to most pure). In project zero, these categories were represented by an ordinal variable, 1-8. You can decide to use the ordinal or categorical variable.</li>
+<li><em>Color</em> represents the color of the diamond, and is rated D through J, with D being the most colorless (and valuable) and J being the most yellow. </li>
+</ul>
+<p><strong>Step 2 – Build the model:</strong> In project zero, the results were provided, but now you get to calculate them. A few things are different this time around. </p>
+<ul>
+<li>You have more potential predictor variables</li>
+<li>You now know how to use categorical variables, so no need to rely only on ordinal variables. </li>
+</ul>
+<p>Go through the steps you’ve learned through the course to build the model and come up with a regression equation. </p>
+<p><strong><font color="red">IMPORTANT</font>:</strong> When using Alteryx, you do not need to manually create dummy variables before building the model. If you select a categorical variable, like cut or clarity, then Alteryx will automatically create the dummy variables and give you the correct regression output.</p>
+<p><strong>Step 3 – Calculate the predicted price for diamond:</strong> For each diamond, plug in the values for each of the variables into the equation. Then solve the equation to get the estimated, or predicted, diamond price.</p>
+<p><strong>Step 4 – Make a recommendation:</strong> Now that you have the predicted price for each diamond, it’s time to calculate the bid price for the whole set. Note: The diamond price that the model predicts represents the final retail price the consumer will pay. The company generally purchases diamonds from distributors at 70% of the that price, so your recommended bid price should represent that.</p>
+<h3 id="self-assessment">Self-Assessment</h3>
+<p>Do your best to complete the practice project on your own. Once you are done, or get stuck, take a look at the solution. We’ve provided the solution dataset, Alteryx workflow, as well as a walk through of how to complete the project. There's not necessarily one perfectly right answer.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="04. Practice Project Solution.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.4.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Practice Project Details')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.065
+Hi, we're back with some more walkthroughs of typical Alteryx errors.
+
+00:00:06.065 --> 00:00:12.645
+So, in this one, we are going to actually try and recreate the linear regression formula
+
+00:00:12.645 --> 00:00:19.515
+using the linear regression tool from the old diamond dataset from the first project.
+
+00:00:19.515 --> 00:00:22.905
+So, first off, if we just connect it
+
+00:00:22.905 --> 00:00:26.700
+straight from diamonds to the linear regression model,
+
+00:00:26.700 --> 00:00:29.220
+you can see an error already pops up,
+
+00:00:29.220 --> 00:00:32.390
+saying at least one predictor variable must be selected.
+
+00:00:32.390 --> 00:00:39.645
+So, if we just go ahead and select the ones that are in that formula,
+
+00:00:39.645 --> 00:00:41.390
+so now we have a few,
+
+00:00:41.390 --> 00:00:47.155
+it says no valid fields were selected.
+
+00:00:47.155 --> 00:00:49.410
+We haven't selected target variable yet,
+
+00:00:49.410 --> 00:00:52.440
+but it doesn't seem to let us, which seems odd.
+
+00:00:52.440 --> 00:00:54.800
+So, what's going on here?
+
+00:00:54.800 --> 00:00:56.115
+If we try and run it,
+
+00:00:56.115 --> 00:00:58.545
+it just errors out on us.
+
+00:00:58.545 --> 00:01:04.100
+The first thing we should always jump to is popping
+
+00:01:04.100 --> 00:01:09.875
+in both a browse tool to the data and the select tool.
+
+00:01:09.875 --> 00:01:14.330
+This both gives us the visibility into the data if we run this again
+
+00:01:14.330 --> 00:01:18.200
+really quickly to see what's going on?
+
+00:01:18.200 --> 00:01:19.835
+What does our data look like?
+
+00:01:19.835 --> 00:01:22.670
+The select tool helps us check on the data type
+
+00:01:22.670 --> 00:01:26.550
+which is typically what is triggering errors.
+
+00:01:26.550 --> 00:01:30.540
+So, here again, we have to select the proper datatypes.
+
+00:01:30.540 --> 00:01:36.570
+So, let's go ahead and select double for all of the pieces of our formula,
+
+00:01:36.570 --> 00:01:39.330
+and make this a little bigger,
+
+00:01:39.330 --> 00:01:40.695
+so you can see all these.
+
+00:01:40.695 --> 00:01:43.220
+All right. So, if we run this again,
+
+00:01:43.220 --> 00:01:46.705
+it automatically selected carat,
+
+00:01:46.705 --> 00:01:49.470
+which is not the target variable we want.
+
+00:01:49.470 --> 00:01:51.230
+We wanted it to break price,
+
+00:01:51.230 --> 00:01:53.000
+but it won't let us select that.
+
+00:01:53.000 --> 00:01:55.710
+Now, another reason it won't let as select that is because
+
+00:01:55.710 --> 00:02:01.030
+the linear regression tool is expecting a numerical variable for its target variable.
+
+00:02:01.030 --> 00:02:04.035
+If we look back at the select tool,
+
+00:02:04.035 --> 00:02:08.450
+our price field here is still labeled as a V string.
+
+00:02:08.450 --> 00:02:13.044
+So, if we update this field as well to be a double,
+
+00:02:13.044 --> 00:02:15.620
+go back in linear regression tool,
+
+00:02:15.620 --> 00:02:18.470
+now we can select price.
+
+00:02:18.470 --> 00:02:23.715
+If we add a Browse tool here to the report, it should run,
+
+00:02:23.715 --> 00:02:26.625
+linear regression takes a minute for it to run,
+
+00:02:26.625 --> 00:02:30.015
+but we're not getting any errors which is good news.
+
+00:02:30.015 --> 00:02:32.960
+You might see this often as well that
+
+00:02:32.960 --> 00:02:36.350
+some invalid name has been replaced by something so,
+
+00:02:36.350 --> 00:02:40.590
+in this instance, it's referring to that there's no model name here.
+
+00:02:40.590 --> 00:02:43.080
+So, if we just fill this out,
+
+00:02:43.080 --> 00:02:46.085
+that's going to remove that warning.
+
+00:02:46.085 --> 00:02:49.910
+You can also get this warning when it comes to
+
+00:02:49.910 --> 00:02:54.050
+the titles of the fields which we'll get into a little bit later.
+
+00:02:54.050 --> 00:02:55.740
+So, if you can see here,
+
+00:02:55.740 --> 00:02:59.620
+this is producing that formula that we gave you guys,
+
+00:02:59.620 --> 00:03:01.625
+it's actually a little bit different.
+
+00:03:01.625 --> 00:03:05.285
+I think that's some rounding issues,
+
+00:03:05.285 --> 00:03:09.260
+but it's essentially the same estimates,
+
+00:03:09.260 --> 00:03:12.005
+coefficient estimates for each of the variables.
+
+00:03:12.005 --> 00:03:15.830
+Now, we're going to try and apply
+
+00:03:15.830 --> 00:03:21.605
+the Score tool to another dataset and see how that works.
+
+00:03:21.605 --> 00:03:25.010
+All right, let me grab this.
+
+00:03:25.010 --> 00:03:29.450
+So, the Score tool basically takes the linear regression formula,
+
+00:03:29.450 --> 00:03:33.350
+and it allows you to apply it to another dataset,
+
+00:03:33.350 --> 00:03:37.290
+so we're going to input.
+
+00:03:37.290 --> 00:03:39.380
+So, I actually made
+
+00:03:39.380 --> 00:03:46.940
+some specific diamond datasets that try and show you what all can go wrong.
+
+00:03:46.940 --> 00:03:52.250
+So, we're going to go ahead and run this and see what happens.
+
+00:03:52.490 --> 00:03:56.355
+Okay. So, we got a error here.
+
+00:03:56.355 --> 00:04:03.765
+Now, you can be confused because again it seemed like you had everything set up right,
+
+00:04:03.765 --> 00:04:05.350
+but if you look down here,
+
+00:04:05.350 --> 00:04:07.680
+it's saying that the variables carat,
+
+00:04:07.680 --> 00:04:11.335
+cut_ord, clarity_ord are missing from the input data stream.
+
+00:04:11.335 --> 00:04:15.465
+That's typically referring to this new dataset,
+
+00:04:15.465 --> 00:04:18.425
+but if you look at it, it looks like it has carat,
+
+00:04:18.425 --> 00:04:23.930
+cut_ord, and clarity_ord, but if you look a little bit closer,
+
+00:04:23.930 --> 00:04:29.130
+the difference is there's no underscores here where there are underscores here.
+
+00:04:29.130 --> 00:04:31.870
+So, it's a small thing,
+
+00:04:31.870 --> 00:04:36.740
+but it's something that will mess Alteryx up and something you have to fix.
+
+00:04:36.740 --> 00:04:39.950
+So, the Select tool is great for fixing that.
+
+00:04:39.950 --> 00:04:43.685
+So, if we rename this so that it matches exactly
+
+00:04:43.685 --> 00:04:48.945
+with the field name from the original dataset.
+
+00:04:48.945 --> 00:04:52.435
+So, you also need to, again,
+
+00:04:52.435 --> 00:04:55.540
+assign these the same datatypes,
+
+00:04:55.540 --> 00:04:59.575
+or we'll do one where I don't assign one of them,
+
+00:04:59.575 --> 00:05:01.605
+so we can see what happens.
+
+00:05:01.605 --> 00:05:05.075
+Okay. So, if the datatype doesn't match,
+
+00:05:05.075 --> 00:05:08.515
+you're going to get this other error where it's saying
+
+00:05:08.515 --> 00:05:13.295
+basically that the datatypes don't match up.
+
+00:05:13.295 --> 00:05:16.760
+So, if you don't make sure that all
+
+00:05:16.760 --> 00:05:20.695
+of the datatypes and the field names don't match exactly,
+
+00:05:20.695 --> 00:05:22.150
+you're gonna get a error,
+
+00:05:22.150 --> 00:05:26.790
+and this is true for a lot of the tools inside of Alteryx.
+
+00:05:26.790 --> 00:05:28.010
+So, you got to pay attention to
+
+00:05:28.010 --> 00:05:32.180
+those details and look what the Select tool, what's going on.
+
+00:05:32.180 --> 00:05:34.685
+But, now with this one,
+
+00:05:34.685 --> 00:05:39.670
+now that we've fixed all those datatype issues and the field name issues,
+
+00:05:39.670 --> 00:05:42.840
+we should get through it without any errors.
+
+00:05:42.840 --> 00:05:48.370
+It's all right. Awesome. Now, that's
+
+00:05:48.370 --> 00:05:52.810
+it for this video and we're going to talk through one more issue in the next.
+

@@ -1,0 +1,285 @@
+<!-- udacimak v1.4.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Score the Model</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Practice Project</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Practice Project Intro.html">01. Practice Project Intro</a>
+    </li>
+    <li class="">
+      <a href="02. New Alteryx Tools.html">02. New Alteryx Tools</a>
+    </li>
+    <li class="">
+      <a href="03. Practice Project Details.html">03. Practice Project Details</a>
+    </li>
+    <li class="">
+      <a href="04. Practice Project Solution.html">04. Practice Project Solution</a>
+    </li>
+    <li class="">
+      <a href="05. Solution Walkthrough.html">05. Solution Walkthrough</a>
+    </li>
+    <li class="">
+      <a href="06. Input and Visualize Data.html">06. Input and Visualize Data</a>
+    </li>
+    <li class="">
+      <a href="07. Build the Model.html">07. Build the Model</a>
+    </li>
+    <li class="">
+      <a href="08. Score the Model.html">08. Score the Model</a>
+    </li>
+    <li class="">
+      <a href="09. On to the Project!.html">09. On to the Project!</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">08. Score the Model</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="score-the-model">Score the model</h2>
+<p>Now that we have a model, it’s time to apply it to the batch of 3,000 to make a prediction and recommendation. For project zero you did this manually in a spreadsheet by using the linear regression equation and plugging in values. Alteryx makes this a bit simpler with a tool called a Score tool.</p>
+<h4 id="score-tool">Score Tool</h4>
+<p>Let’s start by bringing in the new_diamonds data set and setting the datatypes correctly, like we did for the diamonds dataset. Now, let’s bring in the score tool. We attach the linear regression to one side, and the new_diamonds dataset to the other. The score tool does not require any configuration, and it will automatically apply the regression results to the new_diamonds data. The results of the Score tool will create a field called "Score" which represents the predicted diamond price for each of the diamonds in the new_diamonds data.</p>
+<p>Now attach a browse tool and a scatterplot tool so we can visualize the data. Select Score as the y-variable, and carat as the x-variable.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/scatterplot-results.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>You can see the data is a bit tighter than the larger dataset of diamonds that had actual prices. This shows that while the model does better than the one we created in project 0, it doesn’t account for all the variable. Also, we can see that some of the prices are predicted to be negative, which obviously doesn’t make sense. To correct for this, you could set a minimum price or any diamond. However, you can expect some prices to be overestimated and others underestimated. Since we're aggregating all the prices, I left the prediction as is.</p>
+<h2 id="summarize-the-data">Summarize the data</h2>
+<p>Next we bring in a summarize tool to add all the predicted prices together. This gives us an estimate of the total retail value of the batch of 3,000 diamonds. To come up with a bid price, we multiply this bid by 70%, since the company targets purchases the diamonds at 70% of retail value.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/summarize-workflow-pic.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h4 id="summarize-tool">Summarize Tool</h4>
+<p>First, attach the Summarize tool to the Score tool. Then you'll see the configuration panel like the one below. To sum the Score field, click on Score in the top panel, then click add and select the Sum function. This will be added to the action panel and will create a field called Sum_Score.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/summarize-configs.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h4 id="formula-tool">Formula Tool</h4>
+<p>Next, we'll add a formula tool to multiple the sum_score field by 0.7. To do this:</p>
+<ul>
+<li>Attach the Formula tool to the Summarize tool and take a look at the configuration panel. </li>
+<li>For the output field at the top, select sum_score, since it's the field you will use to make a calculation. </li>
+<li>Either select the variable sum_score form the Existing Fields drop down, or simply write in [Sum_Score] into the Expression panel. </li>
+<li>Just like in Excel, write the formula: [Sum_Score] * 0.7. This will take the sum of all the predicted diamond prices and multiply it by 0.7.</li>
+<li>Attach a browse tool and run the workflow.</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/formula-config.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="bid-recommendation">Bid Recommendation</h2>
+<p>The output of the formula tool should give you an answer of approximately $8,230,695.69, which would be your recommended bid price for the 3000 diamonds.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="09. On to the Project!.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.4.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. Score the Model')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

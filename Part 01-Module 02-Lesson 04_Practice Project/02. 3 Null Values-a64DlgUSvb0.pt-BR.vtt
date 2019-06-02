@@ -1,0 +1,272 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.448 --> 00:00:05.067
+Vamos mostrar outra
+coisa comum
+
+00:00:05.113 --> 00:00:08.843
+que engatilha a maioria
+dos erros no Alteryx,
+
+00:00:09.507 --> 00:00:11.419
+que são os valores Null.
+
+00:00:13.133 --> 00:00:16.435
+Se você utiliza
+a versão 10.6,
+
+00:00:16.481 --> 00:00:19.492
+que é a versão
+que recomendamos,
+
+00:00:19.538 --> 00:00:21.564
+ou se estiver utilizando
+a 11,
+
+00:00:21.610 --> 00:00:25.082
+isso impactará nas ferramentas
+de forma diferente.
+
+00:00:25.128 --> 00:00:27.955
+Eu não darei nenhum
+exemplo específico,
+
+00:00:28.001 --> 00:00:32.170
+mas mostrarei como identificar
+se você as tem ou não.
+
+00:00:32.216 --> 00:00:34.066
+A forma mais fácil,
+
+00:00:34.112 --> 00:00:36.546
+e eu chamei isto
+de Bad Diamond Data,
+
+00:00:36.592 --> 00:00:40.210
+pois possui valores Null,
+
+00:00:40.256 --> 00:00:43.089
+é adicionando uma ferramenta
+de sumário de campo.
+
+00:00:43.135 --> 00:00:45.635
+Sempre que encontrar erros,
+
+00:00:45.681 --> 00:00:47.456
+além da ferramenta
+de navegação,
+
+00:00:47.502 --> 00:00:49.828
+adicione a ferramenta
+de sumário de campo.
+
+00:00:49.874 --> 00:00:55.740
+Logo que uma quantia de dados
+entrar na ferramenta,
+
+00:00:55.786 --> 00:00:59.106
+anexe uma ferramenta
+sumário de campo.
+
+00:00:59.152 --> 00:01:01.707
+Selecione todos os campos
+possíveis.
+
+00:01:03.828 --> 00:01:06.714
+Adicione
+todos os navegadores
+
+00:01:06.760 --> 00:01:08.827
+e rode o fluxo de trabalho.
+
+00:01:11.133 --> 00:01:15.660
+Nesta exibição, sempre que houver
+algo em vermelho,
+
+00:01:15.706 --> 00:01:17.694
+é porque há algo afastando.
+
+00:01:19.526 --> 00:01:23.574
+Isso pode engatilhar
+um monte de erros
+
+00:01:23.620 --> 00:01:25.761
+com nomes malucos
+aqui embaixo.
+
+00:01:26.648 --> 00:01:29.338
+Se observarmos aqui,
+vemos a mesma coisa.
+
+00:01:30.144 --> 00:01:33.063
+Ele mostra a porcentagem
+que está faltando.
+
+00:01:33.109 --> 00:01:35.808
+Vamos adicionar uma ferramenta
+de navegação
+
+00:01:35.854 --> 00:01:40.518
+para ver como fica.
+
+00:01:42.000 --> 00:01:45.214
+Vamos aumentar isto
+um pouco e descer.
+
+00:01:45.260 --> 00:01:47.838
+Sempre que virmos
+este Null aqui,
+
+00:01:47.884 --> 00:01:50.366
+este Null entre colchetes,
+
+00:01:50.412 --> 00:01:52.198
+isso significa valores
+que faltam.
+
+00:01:52.244 --> 00:01:56.896
+E isso bagunçará
+muitas ferramentas,
+
+00:01:56.942 --> 00:01:59.055
+especialmente quando usamos
+a versão 11.
+
+00:02:00.111 --> 00:02:01.839
+Formas de lidar com isso...
+
+00:02:02.543 --> 00:02:05.845
+Podemos utilizar
+a ferramenta de filtragem,
+
+00:02:06.830 --> 00:02:09.885
+que permitirá
+escolher um campo.
+
+00:02:11.156 --> 00:02:15.971
+Se voltarmos, vemos que carat
+apresenta valor Null
+
+00:02:16.017 --> 00:02:20.596
+para a linha 15 e 19,
+sendo que a 19 é a linha toda.
+
+00:02:20.642 --> 00:02:23.804
+Podemos escolher um campo,
+por exemplo, carat,
+
+00:02:23.850 --> 00:02:25.621
+e podemos dizer...
+
+00:02:27.606 --> 00:02:29.076
+que não seja Null.
+
+00:02:29.122 --> 00:02:31.358
+Isso significa
+que tudo no verdadeiro...
+
+00:02:31.404 --> 00:02:35.148
+Quando rodarmos isso.
+A linha 15 não estará mais lá.
+
+00:02:35.194 --> 00:02:40.156
+No falso, vemos que os dois registros
+que continham os Nulls
+
+00:02:40.202 --> 00:02:43.318
+foram filtrados. Esta é uma
+das formas de lidar com isso.
+
+00:02:43.364 --> 00:02:47.689
+Outra forma, que cobrirá
+de forma mais profunda...
+
+00:02:47.735 --> 00:02:51.344
+Você deverá imputar,
+
+00:02:51.390 --> 00:02:53.866
+e isso será falado
+durante o curso...
+
+00:02:53.912 --> 00:02:58.049
+Basicamente, sempre
+que houver um valor Null,
+
+00:02:58.095 --> 00:03:00.596
+podemos substituir
+com a média
+
+00:03:00.642 --> 00:03:03.452
+ou podemos
+configurar um valor.
+
+00:03:03.498 --> 00:03:07.076
+Mas esta é outra forma
+de substituir,
+
+00:03:07.122 --> 00:03:09.221
+sempre que houver um Null,
+
+00:03:09.267 --> 00:03:11.166
+por um valor específico.
+
+00:03:13.046 --> 00:03:16.644
+A última forma
+que eu recomendaria
+
+00:03:16.690 --> 00:03:18.412
+para lidar com Nulls
+
+00:03:18.458 --> 00:03:21.556
+é a ferramenta de limpeza
+de dados,
+
+00:03:21.602 --> 00:03:23.740
+que substitui os Nulls
+
+00:03:23.786 --> 00:03:26.712
+por valores em branco,
+nos campos string,
+
+00:03:26.758 --> 00:03:28.829
+e por zeros,
+nos campos numéricos.
+
+00:03:28.875 --> 00:03:33.413
+Isso depende do tipo de dados
+que passamos na ferramenta.
+
+00:03:33.459 --> 00:03:35.060
+Lembre-se de que,
+no momento,
+
+00:03:35.106 --> 00:03:37.431
+como não colocamos
+uma ferramenta de seleção,
+
+00:03:37.477 --> 00:03:38.684
+se fizermos isto,
+
+00:03:38.730 --> 00:03:41.732
+obteremos espaços
+em branco e não zeros
+
+00:03:41.778 --> 00:03:44.373
+para os valores Null,
+que deveriam ser enumerados.
+
+00:03:44.419 --> 00:03:47.533
+Utilize a ferramenta
+de seleção antes
+
+00:03:47.579 --> 00:03:49.581
+de utilizar a de limpeza
+
+00:03:49.627 --> 00:03:52.893
+e a de imputação.
+
+00:03:53.565 --> 00:03:54.724
+Obrigado.
+

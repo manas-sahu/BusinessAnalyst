@@ -1,0 +1,403 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.100 --> 00:00:03.691
+Voltamos com mais
+algumas demonstrações
+
+00:00:03.737 --> 00:00:06.315
+de erros típicos
+do Alteryx.
+
+00:00:06.361 --> 00:00:10.625
+Desta vez,
+nós tentaremos recriar
+
+00:00:10.671 --> 00:00:12.601
+a fórmula
+de regressão linear
+
+00:00:12.647 --> 00:00:15.161
+utilizada na ferramenta
+de regressão linear
+
+00:00:15.207 --> 00:00:19.362
+do conjunto de dados
+Diamonds do primeiro projeto.
+
+00:00:20.147 --> 00:00:24.753
+Primeiro, se conectarmos
+direto do Diamonds
+
+00:00:24.799 --> 00:00:29.135
+ao modelo de regressão linear,
+vemos que o erro já aparece,
+
+00:00:29.181 --> 00:00:32.769
+dizendo que pelo menos uma variável
+de previsão deve ser selecionada.
+
+00:00:32.815 --> 00:00:34.456
+Então, no...
+
+00:00:34.502 --> 00:00:39.849
+Se selecionarmos as que estiverem
+na fórmula,
+
+00:00:39.895 --> 00:00:42.057
+agora temos algumas.
+
+00:00:42.103 --> 00:00:43.769
+Está bem.
+
+00:00:43.815 --> 00:00:46.577
+O campo Null
+foi selecionado.
+
+00:00:47.458 --> 00:00:50.619
+Não selecionamos a variável alvo,
+pois ainda não podemos,
+
+00:00:50.665 --> 00:00:52.753
+e isso é estranho.
+
+00:00:52.799 --> 00:00:54.888
+O que está acontecendo?
+
+00:00:54.934 --> 00:00:57.825
+Se tentarmos rodar,
+ele dá erro.
+
+00:00:59.786 --> 00:01:02.231
+A primeira coisa
+que sempre devemos fazer
+
+00:01:02.277 --> 00:01:07.873
+é adicionar a ferramenta
+de navegação aos dados
+
+00:01:07.919 --> 00:01:09.466
+e a de seleção.
+
+00:01:10.345 --> 00:01:15.226
+Isso nos dá a visibilidade
+dos dados, se rodarmos novamente,
+
+00:01:16.042 --> 00:01:18.265
+assim veremos
+o que está acontecendo,
+
+00:01:18.311 --> 00:01:19.897
+como estão os dados.
+
+00:01:19.943 --> 00:01:23.482
+A ferramenta de seleção
+nos ajuda a conferir o tipo de dado,
+
+00:01:23.528 --> 00:01:26.513
+que tipicamente é o que
+engatilha o erro.
+
+00:01:26.559 --> 00:01:30.561
+Temos que selecionar
+o tipo de dado adequado.
+
+00:01:30.607 --> 00:01:33.194
+Vamos selecionar "decimais"
+
+00:01:33.240 --> 00:01:36.883
+para as partes
+da nossa fórmula.
+
+00:01:38.011 --> 00:01:40.554
+Vou ampliar um pouco
+para vermos melhor.
+
+00:01:41.578 --> 00:01:43.369
+Se rodarmos novamente,
+
+00:01:43.415 --> 00:01:46.783
+ele seleciona
+automaticamente carat,
+
+00:01:46.829 --> 00:01:49.509
+que não é a variável alvo
+que desejamos.
+
+00:01:49.555 --> 00:01:53.316
+Queríamos o preço,
+mas não conseguimos selecionar isso.
+
+00:01:53.362 --> 00:01:55.394
+A razão para isso
+
+00:01:55.440 --> 00:01:57.838
+é que a ferramenta de regressão
+está esperando
+
+00:01:57.884 --> 00:02:01.065
+uma variável numérica
+como variável alvo.
+
+00:02:01.111 --> 00:02:03.515
+Se observarmos
+a ferramenta de seleção,
+
+00:02:04.338 --> 00:02:06.842
+o campo de preço
+ainda está rotulado
+
+00:02:06.888 --> 00:02:08.466
+como v_string,
+
+00:02:08.512 --> 00:02:11.609
+portanto, se atualizarmos
+este campo também,
+
+00:02:11.655 --> 00:02:13.209
+para que seja decimal,
+
+00:02:13.255 --> 00:02:15.870
+podemos voltar à ferramenta
+de regressão linear
+
+00:02:15.898 --> 00:02:18.250
+e selecionar o preço.
+
+00:02:18.296 --> 00:02:22.036
+Se adicionarmos uma ferramenta
+do navegador ao relatório,
+
+00:02:22.779 --> 00:02:26.267
+ele rodará. A regressão linear
+leva um tempo para rodar,
+
+00:02:26.962 --> 00:02:30.265
+mas não vemos nenhum erro,
+o que é bom.
+
+00:02:30.311 --> 00:02:32.617
+Vemos isto com frequência,
+
+00:02:32.663 --> 00:02:36.377
+que algum nome inválido
+foi substituído por algo.
+
+00:02:36.423 --> 00:02:40.578
+Esta instrução diz que não há
+nenhum nome de modelo aqui.
+
+00:02:40.624 --> 00:02:45.507
+Se preenchermos isto,
+o aviso será removido.
+
+00:02:46.538 --> 00:02:51.770
+O aviso também aparece
+nos títulos dos campos,
+
+00:02:51.816 --> 00:02:54.321
+mas falaremos sobre isso
+depois.
+
+00:02:54.367 --> 00:03:00.178
+Podemos ver que aqui está
+produzindo a fórmula.
+
+00:03:00.224 --> 00:03:01.771
+Está um pouco diferente,
+
+00:03:01.817 --> 00:03:05.466
+mas acho que é por questão
+de arredondamento,
+
+00:03:05.512 --> 00:03:09.274
+mas, essencialmente,
+são as mesmas estimativas,
+
+00:03:09.320 --> 00:03:12.171
+os mesmos coeficientes
+para cada uma das variáveis.
+
+00:03:12.217 --> 00:03:15.908
+Agora tentaremos aplicar
+
+00:03:15.954 --> 00:03:17.932
+a ferramenta de pontuação
+
+00:03:17.978 --> 00:03:21.381
+em outro conjunto de dados,
+para ver como funciona.
+
+00:03:23.749 --> 00:03:25.156
+Vou pegar isto.
+
+00:03:25.202 --> 00:03:29.365
+A ferramenta de pontuação pega
+a fórmula de regressão linear
+
+00:03:29.411 --> 00:03:31.348
+e permite aplicá-la
+
+00:03:31.394 --> 00:03:33.573
+a outro conjunto de dados.
+
+00:03:33.619 --> 00:03:36.829
+Nós vamos entrar...
+
+00:03:37.814 --> 00:03:40.268
+Eu criei
+
+00:03:40.314 --> 00:03:43.173
+alguns conjuntos de dados
+
+00:03:43.219 --> 00:03:46.556
+para mostrar
+como os erros ocorrem.
+
+00:03:47.436 --> 00:03:51.380
+Vamos rodar isto
+para ver o que acontece.
+
+00:03:53.403 --> 00:03:56.561
+Está bem, então,
+temos um erro aqui.
+
+00:03:56.607 --> 00:03:59.666
+Isso pode ser confuso,
+
+00:03:59.712 --> 00:04:03.923
+pois parecia que tudo
+estava configurado certo,
+
+00:04:03.969 --> 00:04:05.539
+mas, se observarmos aqui,
+
+00:04:05.585 --> 00:04:09.418
+diz que as variáveis carat,
+cut_ord e clarity_ord
+
+00:04:09.464 --> 00:04:11.386
+não estão
+nos dados de entrada.
+
+00:04:11.432 --> 00:04:15.076
+Isso faz referência
+ao novo conjunto de dados.
+
+00:04:15.811 --> 00:04:21.482
+Parece que há
+carat, cut_ord e clarity_ord,
+
+00:04:21.528 --> 00:04:23.858
+mas se observamos
+atentamente,
+
+00:04:23.904 --> 00:04:26.267
+a diferença é que não há
+sublinhados aqui,
+
+00:04:26.313 --> 00:04:28.532
+mas há aqui.
+
+00:04:29.660 --> 00:04:31.794
+Isso é pequeno,
+
+00:04:31.840 --> 00:04:35.050
+mas é algo que causa
+erro no Alteryx,
+
+00:04:35.096 --> 00:04:36.958
+e é algo
+que precisa ser consertado.
+
+00:04:37.004 --> 00:04:39.596
+A ferramenta de seleção
+serve para consertar isto.
+
+00:04:39.642 --> 00:04:43.900
+Vamos renomear isto,
+para que seja exatamente
+
+00:04:43.946 --> 00:04:48.965
+igual ao nome do campo
+do conjunto de dados original.
+
+00:04:49.011 --> 00:04:52.410
+Também precisamos
+
+00:04:52.456 --> 00:04:55.107
+atribuir o mesmo
+tipo de dado.
+
+00:04:56.028 --> 00:04:59.602
+Farei uma vez
+sem atribuir isso,
+
+00:04:59.648 --> 00:05:01.420
+para vermos o que ocorre.
+
+00:05:02.171 --> 00:05:05.050
+Se o tipo de dado
+não corresponde,
+
+00:05:05.096 --> 00:05:07.244
+veremos este erro
+
+00:05:07.290 --> 00:05:10.125
+dizendo que...
+
+00:05:10.821 --> 00:05:13.116
+os tipos de dados
+não correspondem.
+
+00:05:14.174 --> 00:05:18.316
+Se todos os tipos de dados
+
+00:05:18.362 --> 00:05:20.668
+e os nomes dos campos
+não correspondem,
+
+00:05:20.714 --> 00:05:22.292
+você obterá um erro.
+
+00:05:22.338 --> 00:05:24.897
+Isso vale
+
+00:05:24.943 --> 00:05:26.977
+para muitas ferramentas
+do Alteryx.
+
+00:05:27.023 --> 00:05:29.234
+É preciso prestar atenção
+aos detalhes
+
+00:05:29.280 --> 00:05:32.737
+e ver o que está acontecendo,
+com a ferramenta de seleção.
+
+00:05:32.783 --> 00:05:36.170
+Agora, com esta fórmula,
+agora que consertamos
+
+00:05:36.216 --> 00:05:39.147
+os problemas de tipo de dado
+e de nome de campo,
+
+00:05:40.146 --> 00:05:43.182
+podemos rodar
+sem nenhum erro.
+
+00:05:43.893 --> 00:05:45.318
+Legal!
+
+00:05:46.118 --> 00:05:47.764
+Agora...
+
+00:05:47.810 --> 00:05:49.140
+É só isso.
+
+00:05:49.186 --> 00:05:52.294
+Falaremos de outro problema
+no próximo vídeo.
+

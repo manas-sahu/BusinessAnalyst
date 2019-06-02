@@ -1,0 +1,394 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.075 --> 00:00:03.581
+Olá. Veremos o fluxo
+de trabalho do Alteryx,
+
+00:00:03.627 --> 00:00:05.445
+no qual encontramos erros
+
+00:00:05.491 --> 00:00:07.860
+e tentamos descobrir
+o que estava acontecendo
+
+00:00:07.906 --> 00:00:09.966
+para resolvê-los
+rapidamente.
+
+00:00:10.012 --> 00:00:11.821
+No exemplo que utilizarei,
+
+00:00:11.867 --> 00:00:14.285
+trarei o conjunto de dados
+do diamante
+
+00:00:14.331 --> 00:00:16.366
+do primeiro projeto
+
+00:00:16.412 --> 00:00:20.711
+e tentarei aplicar
+a fórmula de regressão linear
+
+00:00:21.459 --> 00:00:23.124
+fornecida no projeto
+
+00:00:23.170 --> 00:00:26.884
+para ver o quão próximo
+o preço previsto pelo modelo
+
+00:00:26.930 --> 00:00:29.322
+está do preço verdadeiro
+do diamante.
+
+00:00:29.368 --> 00:00:31.672
+Antes disso,
+precisamos nomear o campo.
+
+00:00:31.718 --> 00:00:35.481
+Chamaremos isto
+de PredictedPrice.
+
+00:00:35.527 --> 00:00:38.184
+Depois disso, podemos digitar
+uma expressão.
+
+00:00:38.230 --> 00:00:42.384
+Vou copiar a expressão
+que obtivemos
+
+00:00:42.430 --> 00:00:45.801
+do modelo
+e regressão linear.
+
+00:00:47.698 --> 00:00:50.449
+Vemos que há um erro parse.
+
+00:00:50.495 --> 00:00:53.728
+Não precisamos
+desta primeira parte
+
+00:00:53.774 --> 00:00:56.081
+para rodar a fórmula,
+
+00:00:56.127 --> 00:01:01.424
+porque a expressão
+retornará o valor do preço previsto,
+
+00:01:01.470 --> 00:01:05.210
+então não precisamos referenciar
+o preço nesta expressão.
+
+00:01:05.256 --> 00:01:06.849
+Se tentarmos rodar isto,
+
+00:01:06.895 --> 00:01:10.088
+teremos um erro,
+por alguns motivos.
+
+00:01:10.134 --> 00:01:15.000
+Vemos aqui que há um erro parse
+no segundo caractere.
+
+00:01:15.046 --> 00:01:19.848
+Eles não sabem o que fazer
+com vírgulas e números.
+
+00:01:19.894 --> 00:01:21.752
+Então precisamos
+nos livrar deles.
+
+00:01:21.798 --> 00:01:26.867
+Se rodarmos novamente,
+vemos outro erro parse,
+
+00:01:26.913 --> 00:01:30.138
+desta vez no 13º.
+Aqui há um "x",
+
+00:01:30.184 --> 00:01:32.852
+e, em vez do X,
+deve haver um asterisco,
+
+00:01:32.898 --> 00:01:34.555
+pois é multiplicação.
+
+00:01:34.601 --> 00:01:37.291
+Devemos atualizar isto.
+
+00:01:37.337 --> 00:01:39.451
+Isso parece certo.
+
+00:01:40.387 --> 00:01:42.908
+Vamos rodar.
+Ainda não funciona.
+
+00:01:43.716 --> 00:01:47.984
+O erro diz que a fórmula
+tenta aplicar operações numéricas
+
+00:01:48.030 --> 00:01:49.441
+a valores string.
+
+00:01:49.487 --> 00:01:53.624
+Está tratando "carat",
+"cut" e "clarity"
+
+00:01:53.670 --> 00:01:56.968
+como valores string,
+ou seja, como texto
+
+00:01:57.014 --> 00:02:01.097
+e não como variáveis
+do conjunto de dados.
+
+00:02:01.143 --> 00:02:03.810
+Se formos até as variáveis,
+podemos ver
+
+00:02:04.529 --> 00:02:07.978
+que os campos existem.
+
+00:02:08.024 --> 00:02:11.704
+Se quisermos utilizar "carat",
+se dermos clique duplo,
+
+00:02:11.750 --> 00:02:16.472
+é preciso que haja
+colchetes em volta.
+
+00:02:16.518 --> 00:02:20.456
+Podemos substituir carat
+por isto.
+
+00:02:20.502 --> 00:02:22.456
+Agora vai funcionar,
+
+00:02:22.502 --> 00:02:24.968
+mas estes dois ainda não,
+
+00:02:25.014 --> 00:02:28.694
+então precisamos substituir
+
+00:02:28.740 --> 00:02:31.638
+com os nomes de variável.
+
+00:02:31.684 --> 00:02:34.750
+Muito bem. Agora,
+se eu tentar rodar,
+
+00:02:34.796 --> 00:02:36.687
+obtenho outro erro.
+
+00:02:36.733 --> 00:02:41.895
+Nesse ponto as coisas
+ficam um pouco frustrantes,
+
+00:02:41.941 --> 00:02:46.303
+pois achamos
+que a fórmula está correta,
+
+00:02:46.349 --> 00:02:50.710
+mas precisamos
+observar os dados
+
+00:02:50.756 --> 00:02:52.833
+para ver o que está
+acontecendo.
+
+00:02:52.879 --> 00:02:55.348
+Talvez haja um problema
+
+00:02:56.075 --> 00:02:58.451
+vindo para a ferramenta
+de fórmula.
+
+00:02:58.497 --> 00:03:01.188
+Vamos rodar para observar
+a ferramenta de navegação.
+
+00:03:02.003 --> 00:03:05.746
+Vemos que carat
+é de fato um número,
+
+00:03:05.792 --> 00:03:07.982
+mas parece que cut
+
+00:03:08.028 --> 00:03:11.917
+é um texto, uma string,
+
+00:03:11.963 --> 00:03:17.893
+e parece que a terceira variável,
+clarity, também é uma string.
+
+00:03:17.939 --> 00:03:21.357
+Felizmente, há campos
+com valores numéricos
+
+00:03:21.403 --> 00:03:25.045
+que correspondem
+aos valores da string,
+
+00:03:25.091 --> 00:03:27.404
+então vamos atualizar
+a fórmula
+
+00:03:27.450 --> 00:03:32.052
+para cut_ord e clarity_ord
+
+00:03:32.098 --> 00:03:36.316
+nestas duas variáveis.
+Vamos fazer isso rapidamente.
+
+00:03:36.362 --> 00:03:38.517
+Vou selecionar isto...
+
+00:03:38.563 --> 00:03:41.174
+Campos existentes.
+Vamos trocar.
+
+00:03:42.165 --> 00:03:44.484
+Fazemos o mesmo aqui.
+
+00:03:44.530 --> 00:03:47.180
+Muito bem.
+Acho que agora vai.
+
+00:03:47.226 --> 00:03:49.229
+Vamos rodar.
+
+00:03:49.275 --> 00:03:50.836
+Ainda há um problema.
+
+00:03:50.882 --> 00:03:54.935
+Ainda diz que tentamos aplicar
+operações numéricas para strings.
+
+00:03:54.981 --> 00:03:56.535
+O que está acontecendo?
+
+00:03:56.581 --> 00:04:00.326
+Uma das coisas
+mais comuns a se fazer
+
+00:04:00.372 --> 00:04:03.590
+para resolver um erro
+no Alteryx,
+
+00:04:03.636 --> 00:04:05.766
+é utilizar
+a ferramenta de seleção.
+
+00:04:05.812 --> 00:04:07.799
+Se trouxermos
+a ferramenta de seleção,
+
+00:04:07.845 --> 00:04:12.400
+vemos qual é tipo de dado
+de cada variável.
+
+00:04:12.446 --> 00:04:16.975
+Como vemos aqui, tudo está
+como v_string,
+
+00:04:17.021 --> 00:04:19.513
+que significa
+variável string,
+
+00:04:20.225 --> 00:04:21.767
+e precisamos que seja
+
+00:04:21.813 --> 00:04:23.688
+algum tipo de dado numérico.
+
+00:04:23.734 --> 00:04:25.302
+Vamos atualizar
+
+00:04:25.348 --> 00:04:28.375
+as variáveis que utilizamos
+nesta fórmula,
+
+00:04:28.421 --> 00:04:31.142
+neste caso, carat,
+cut ordinal
+
+00:04:31.188 --> 00:04:36.158
+e clarity_ord,
+clarity ordinal,
+
+00:04:36.204 --> 00:04:38.996
+mudando para decimal.
+
+00:04:39.042 --> 00:04:42.964
+Os decimais são tipos numéricos
+mais flexíveis,
+
+00:04:43.010 --> 00:04:46.860
+então sugerimos isso
+para toda variável numérica
+
+00:04:46.906 --> 00:04:49.110
+que utilizarmos
+durante o curso.
+
+00:04:49.156 --> 00:04:52.483
+Se for
+uma variável categórica,
+
+00:04:52.529 --> 00:04:56.099
+falaremos sobre isso depois,
+porque ela permanece como string.
+
+00:04:56.145 --> 00:04:59.499
+Por ora, qualquer variável numérica
+deve ser decimal.
+
+00:04:59.545 --> 00:05:00.980
+Agora, finalmente,
+
+00:05:02.036 --> 00:05:05.443
+podemos rodar
+sem problemas.
+
+00:05:05.489 --> 00:05:08.180
+Se quisermos, podemos ver
+o final aqui.
+
+00:05:08.226 --> 00:05:09.940
+Vamos testar mais uma vez.
+
+00:05:09.986 --> 00:05:11.692
+Viu? Muito bem.
+
+00:05:11.738 --> 00:05:14.292
+Temos a fórmula para rodar.
+
+00:05:14.338 --> 00:05:17.774
+Vemos a previsão do preço
+e o valor real.
+
+00:05:18.453 --> 00:05:20.596
+Parece que...
+
+00:05:20.642 --> 00:05:24.766
+Vou subir isso
+para ver melhor.
+
+00:05:25.454 --> 00:05:29.524
+A maioria chega bem perto.
+
+00:05:29.570 --> 00:05:32.995
+Uns 200 dólares de diferença.
+Este parece estranho.
+
+00:05:33.804 --> 00:05:36.486
+Estas são oportunidades
+
+00:05:37.998 --> 00:05:39.956
+para reavaliarmos a fórmula
+
+00:05:40.002 --> 00:05:41.714
+e observarmos
+mais profundamente.
+

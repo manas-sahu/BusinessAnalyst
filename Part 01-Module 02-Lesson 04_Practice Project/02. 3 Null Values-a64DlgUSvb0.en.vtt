@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.360
+So, we're here to show you one other common thing that
+
+00:00:05.360 --> 00:00:11.585
+triggers most of the Alteryx errors which is null values.
+
+00:00:11.585 --> 00:00:16.235
+So, depending if you're using 10.6,
+
+00:00:16.235 --> 00:00:21.325
+which is the version of Alteryx we recommend or if you're using 11,
+
+00:00:21.325 --> 00:00:24.514
+it will impact different tools differently.
+
+00:00:24.514 --> 00:00:28.050
+So, I'm not going to walk through so many specific examples so
+
+00:00:28.050 --> 00:00:32.025
+much as how to identify if you have them or not.
+
+00:00:32.025 --> 00:00:34.050
+So, the easiest way to do that,
+
+00:00:34.050 --> 00:00:40.180
+as you can see I call this Bad Diamond Data because I made it to have some null values,
+
+00:00:40.180 --> 00:00:42.320
+is to add a field summary tool.
+
+00:00:42.320 --> 00:00:45.464
+So, anytime you're running into errors,
+
+00:00:45.464 --> 00:00:47.600
+beyond just adding a browse tool,
+
+00:00:47.600 --> 00:00:50.120
+sometimes adding a field summary tool right
+
+00:00:50.120 --> 00:00:55.535
+before some amount of data is going into a tool,
+
+00:00:55.535 --> 00:00:58.850
+you can attach a field summary tool.
+
+00:00:58.850 --> 00:01:01.895
+Make sure you select all the fields you can,
+
+00:01:01.895 --> 00:01:06.675
+and then oops, I need to add in all of the browsers,
+
+00:01:06.675 --> 00:01:09.180
+and then we're going to run that workflow.
+
+00:01:09.180 --> 00:01:12.500
+So, in this view,
+
+00:01:12.500 --> 00:01:14.870
+you can see whenever there's
+
+00:01:14.870 --> 00:01:17.954
+a little bit of red that shows you that there's something missing.
+
+00:01:17.954 --> 00:01:26.230
+Now, that can trigger a whole bunch of errors for you with really crazy names down here.
+
+00:01:26.230 --> 00:01:27.780
+So, if you look in this one,
+
+00:01:27.780 --> 00:01:29.795
+you can see it as well.
+
+00:01:29.795 --> 00:01:32.055
+It'll show you the percentage missing,
+
+00:01:32.055 --> 00:01:35.990
+so let's just add actually a browse tool to the data and
+
+00:01:35.990 --> 00:01:41.270
+see if we can just see one do so we know that it looks like.
+
+00:01:41.270 --> 00:01:45.270
+So, if we pull this up a bit, scroll down.
+
+00:01:45.270 --> 00:01:50.445
+So anytime you see this null here, this bracketed null,
+
+00:01:50.445 --> 00:01:52.285
+those are missing values,
+
+00:01:52.285 --> 00:01:59.290
+and that will mess up many of the tools especially if you are using 11.
+
+00:01:59.290 --> 00:02:02.285
+So, ways to deal with that,
+
+00:02:02.285 --> 00:02:09.940
+you can use the filter tool which will allow you to pick a field.
+
+00:02:09.940 --> 00:02:12.675
+So, if we look back here,
+
+00:02:12.675 --> 00:02:18.710
+we know that carat is a null value for row 15 as well as 19,
+
+00:02:18.710 --> 00:02:20.325
+19 has them all.
+
+00:02:20.325 --> 00:02:22.380
+So, we can pick a field,
+
+00:02:22.380 --> 00:02:23.955
+say something like carat,
+
+00:02:23.955 --> 00:02:28.775
+and we can actually say, is not null.
+
+00:02:28.775 --> 00:02:32.515
+So that means everything in the true when we run this,
+
+00:02:32.515 --> 00:02:35.185
+now 15, it isn't there anymore.
+
+00:02:35.185 --> 00:02:36.250
+If we look in the faults,
+
+00:02:36.250 --> 00:02:41.230
+we can see those two records that did contain nulls filtered out.
+
+00:02:41.230 --> 00:02:43.205
+That's one of the ways you can deal with it.
+
+00:02:43.205 --> 00:02:51.315
+Another way which we'll cover more in depth when you should do it is impute it,
+
+00:02:51.315 --> 00:02:53.745
+which again this will be covered later in the course.
+
+00:02:53.745 --> 00:02:55.495
+But basically, this says,
+
+00:02:55.495 --> 00:02:57.990
+anytime that you see a null value,
+
+00:02:57.990 --> 00:03:03.250
+you can replace with the average median mode or you can even set a number,
+
+00:03:03.250 --> 00:03:05.945
+but this was another way to basically
+
+00:03:05.945 --> 00:03:12.030
+replace anytime that you see a null with a specific value.
+
+00:03:12.160 --> 00:03:19.675
+The last way that I would recommend dealing with nulls is
+
+00:03:19.675 --> 00:03:24.310
+the data cleansing tool which will replace your nulls with
+
+00:03:24.310 --> 00:03:28.780
+either blanks for string fields and zeros for numeric fields.
+
+00:03:28.780 --> 00:03:33.455
+This will depend on the data types you have coming into the tool.
+
+00:03:33.455 --> 00:03:35.080
+So, remember, right now,
+
+00:03:35.080 --> 00:03:37.095
+since we haven't put in a select tool,
+
+00:03:37.095 --> 00:03:38.560
+if you did this,
+
+00:03:38.560 --> 00:03:44.230
+you would get blanks and not zeros for these null values that should be number.
+
+00:03:44.230 --> 00:03:48.665
+So, make sure you use your select tool prior to using
+
+00:03:48.665 --> 00:03:54.860
+the data cleansing tool or actually even using the impute tool. Thank you.
+
